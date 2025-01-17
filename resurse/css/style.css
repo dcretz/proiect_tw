@@ -1,0 +1,345 @@
+:root {
+    --color-background: #dfd7c1;
+    --color-text: #222200;
+    --color-border: #613516;
+    --color-highlight: #a03300;
+    --color-accent: #cf0000;
+}
+
+/* START of CSS reset  */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* end of css reset */
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-size: 16px;
+    transition: font-size 1s ease-in-out;
+}
+body > * {
+    padding: 20px 80px 20px 80px;
+    max-width: 1150px;
+    background-color: #ffffff;
+    margin: auto;
+    box-shadow: 1px 1px 15px rgba(44, 44, 44, 0.27);
+}
+q{
+    font-family: "Great Vibes", serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 2em;
+      
+}
+table {
+    width: 100%;
+    border-collapse: collapse; 
+    margin-bottom: 10px;
+}
+
+caption {
+    caption-side: bottom;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+table {
+    border: 5px double #444; 
+}
+.table-container {
+    overflow-x: auto; 
+}
+th, td {
+    border: 1px solid #444;
+    padding: 10px;
+    text-align: center;
+}
+
+td:nth-child(odd), th:nth-child(odd) {
+    color: #e8a01a; 
+}
+
+td:nth-child(even), th:nth-child(even) {
+    color: #152925; 
+}
+th, tr, td{
+    transition: all 0.3s ease-in;
+}
+tr:hover {
+    background-color: #f1ffbe; 
+    color: #000; 
+}
+
+tr:hover th, tr:hover td {
+    border-width: 5px; 
+}
+
+header{
+    background-color: var(--color-text);
+    color: var(--color-background);
+}
+footer{
+    background-color: var(--color-text);
+    color: var(--color-background);
+}
+
+#grid-pagina{
+    display: grid;
+    gap: 1rem;
+    row-gap: 1rem;
+    grid-template-areas: "z-fig1 z-fig1 z-fig1 z-fig1"
+                         "z-prezentare z-prezentare z-produse z-produse"
+                         "z-promovare z-calculator z-produse z-produse"
+                         "z-faq z-calculator z-produse z-produse"
+                         "z-faq z-audiobook z-audiobook z-audiobook"
+        ;
+}
+
+picture > img{
+    width: 100%;
+}
+iframe {
+    height: auto;
+    width: 100%;
+}
+
+.taburi-iframe {
+    display: flex; 
+    gap: 10px; 
+    justify-content: center;
+    align-items: center;
+    a {
+        border: #000 solid 1px;
+        padding: 10px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        box-shadow: rgb(182, 79, 65) 0px 0px 8px;
+        text-decoration: none;
+        transition: background-color 0.5s ease-in-out ;
+    }
+    a:hover{
+        background-color: rgba(165, 116, 42, 0.404);
+    }
+}
+@property --myColor1 {
+    syntax: '<color>';
+    initial-value: rgba(255,255,255,1);
+    inherits: false;
+  }
+  
+  @property --myColor2 {
+    syntax: '<color>';
+    initial-value: rgba(153,153,153,1);
+    inherits: false;
+  }
+#button-top {
+    position: fixed;
+    left: 15px;
+    bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#button-top::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 3px dashed rgb(59, 59, 59);
+    border-radius: 50%;
+    box-sizing: border-box;
+    background: radial-gradient(var(--myColor1), var(--myColor2), var(--myColor1));
+    transition: border-color 0.4s ease, --myColor1 1s ease, --myColor2 1s ease;
+    animation: xrotate-circle 1s linear;
+    opacity: 0.5;
+}
+
+#button-top:hover::before {
+    border-color: white;
+    animation: rotate-circle 1s linear;
+    --myColor1: var(--color-highlight);
+    --myColor2: var(--color-text);
+    opacity: 1;
+}
+#arrow {
+    font-size: 20px;
+    color: #000;
+    position: relative;
+    z-index: 1;
+}
+
+#tooltip {
+    position: absolute;
+    bottom: 70px;
+    left: 1px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#button-top:hover #tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+@keyframes rotate-circle {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(90deg);
+    }
+}
+@keyframes xrotate-circle {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-90deg);
+    }
+}
+
+
+
+
+/* ecran mediu */
+@media (max-width: 768px) {
+    #grid-pagina {
+      grid-template-areas:
+        "z-fig1 z-fig1"
+        "z-prezentare z-promovare"
+        "z-produse z-produse"
+        "z-calculator z-faq"
+        "z-audiobook z-audiobook";
+    }
+    body{
+        font-size: 14px;
+    }
+    body > * {
+        padding: 15px 40px 15px 40px;
+    }
+    .table-container {
+        overflow-x: scroll; 
+    }
+}
+  
+  /* ecran mic */
+@media (max-width: 480px) {
+    #grid-pagina {
+      grid-template-areas:
+        "z-fig1"
+        "z-prezentare"
+        "z-produse"
+        "z-promovare"
+        "z-calculator"
+        "z-faq"
+        "z-audiobook";
+    }
+    body{
+        font-size: 12px;
+        transition: none;
+    }
+    body > * {
+        padding: 5px 20px 5px 20px;
+    }
+}
+#fig1{
+    grid-area: z-fig1;
+}
+#prezentare-librarie{
+    grid-area: z-prezentare;
+}
+#produse-cautate{
+    grid-area: z-produse;
+}
+#promovare{
+    grid-area: z-promovare;
+}
+#calculator{
+    grid-area: z-calculator;
+}
+#faq{
+    grid-area: z-faq;
+}
+#audiobook{
+    grid-area: z-audiobook;
+}
+
+  
+h1, h2, h3 {
+    color: var(--color-highlight);
+}
+  
+button {
+    background-color: var(--color-highlight);
+    color: var(--color-text);
+    border: 2px solid var(--color-border);
+}
+  
+button:hover {
+    background-color: var(--color-accent);
+}
+  
+a {
+    color: var(--color-highlight);
+}
+  
+a:hover {
+    color: var(--color-accent);
+}
+  
+

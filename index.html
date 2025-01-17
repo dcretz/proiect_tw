@@ -11,20 +11,29 @@
         <!-- Pentru descriere are maxim de caractere, cuvinte cheie, important pentru seo  -->
         <meta name="description" content="Noua librarie online tip cafenea, dar online. Un loc cozy in care gasesti titlurile preferate, sub aroma cafelei si mirosului de carti noi." />
         <meta name="author" content="Dionisie Lungu-Ailenei" />
+
         <link rel="icon" type="image/png" href="./resurse/ico/favicon-48x48.png" sizes="48x48" />
         <link rel="icon" type="image/svg+xml" href="./resurse/ico/favicon.svg" />
         <link rel="shortcut icon" href="./resurse/ico/favicon.ico" />
         <link rel="apple-touch-icon" sizes="180x180" href="./resurse/ico/apple-touch-icon.png" />
+
         <meta name="apple-mobile-web-app-title" content="Bookies" />
+        
         <link rel="manifest" href="./resurse/ico/site.webmanifest" />
+    
+        <link rel="stylesheet" href="resurse/css/style.css" type="text/css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     </head>
 
     <body>
-
-        
         
         <header>
             <h1>Bookies</h1>
+            <img src="resurse/ico/favicon.ico">
             <nav>
                 <ul>
                     <li>
@@ -84,9 +93,10 @@
         </header>
         
         <main>
+            <div id="grid-pagina">
             <figure id="fig1" class="fg-img">
                 <picture>
-                    <source srcset="./resurse/imagini/books200x200.jpeg" media="(max-width: 700px)" />
+                    <source srcset="./resurse/imagini/books200x200.jpeg" media="(max-width: 480px)" />
                     <source srcset="./resurse/imagini/books.jpeg" media="(max-width: 1200px)" />
                     <img src="./resurse/imagini/books.jpeg" alt="Books 1" />
                 </picture>
@@ -96,6 +106,48 @@
                 <h2>Despre noi</h2>
                 <p><q>Nu poți găsi niciodată o ceașcă de ceai suficient de mare sau o carte suficient de groasă pentru mine</q> – CS Lewis.</p>
                 <p>Descopera <b>Bookies</b>, o librarie cozy unde te poti pierde printre titluri fascinante, sub aroma cafelei si mirosul placut al cartilor noi. Aici, fiecare carte te indeamna sa explorezi lumi noi, iar fiecare cana de cafea iti va oferi inspiratia de care ai nevoie. Iti oferim o experienta unica de lectura, chiar si in mediul online!</p>
+                <div class="table-container">
+                <table>
+                    <caption>Lista celor mai citite cărți în ultimii ani</caption>
+                    <thead>
+                      <tr>
+                        <th>Loc</th>
+                        <th>Titlu</th>
+                        <th>Autor</th>
+                        <th>An Publicare</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td colspan="2">Sapiens: Scurtă istorie a omenirii</td>
+                        <td>2011</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>Arta subtilă a nepăsării</td>
+                        <td>Mark Manson</td>
+                        <td>2016</td>
+                      </tr>
+                      <tr>
+                        <td rowspan="2">3</td>
+                        <td>Fluturi</td>
+                        <td>Irina Binder</td>
+                        <td>2012</td>
+                      </tr>
+                      <tr>
+                        <td>Oamenii fericiți citesc și beau cafea</td>
+                        <td>Agnès Martin-Lugand</td>
+                        <td>2013</td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <td colspan="4">Date colectate din surse publice</td>
+                      </tr>
+                    </tfoot>
+                  </table>
+                </div>
             </section>
             
             <section id="produse-cautate">
@@ -168,6 +220,9 @@
                 <article id="servicii-livrare">
                     <h3>Servicii de Livrare</h3>
                     <p>Livram cu rapiditate si usurinta, direct la usa ta sau la un locker din apropiere! Alege optiunea care ti se potriveste cel mai bine si bucura-te de cartile tale preferate in cel mai scurt timp.</p>
+                    <i class="fa-solid fa-truck-fast"></i>
+                    <!-- Icon animat -->
+                    <i class="fas fa-sync fa-spin"></i> <!-- Icon animat cu rotație -->
                 </article>
 
 
@@ -212,6 +267,7 @@
             </section>
 
             <section id="faq">
+                
                 <h2>FAQ</h2>
                 <p>Ai intrebari? Iata cateva dintre cele mai frecvente intrebari pe care le primim:</p>
                 <details>
@@ -226,25 +282,28 @@
                     <summary>Ce metode de plata acceptati?</summary>
                     <p>Acceptam plati cu cardul si ramburs la livrare.</p>
                 </details>
-
+                
             </section>
-            <section id="retete">
+            <section id="audiobook">
                 <h2>Audiobooks</h2>
                 <p>Poti citi o carte chiar si atunci cand mergi, folosind cartile audio. </p>
                 <div class="taburi-iframe">
-                    <a href="https://www.youtube.com/embed/9RqSjyfu6hg" target="ifr-video">Idiotul - Feodor Dostoievski</a>|
-                    <a href="https://www.youtube.com/embed/6zfXsSJ82Fg" target="ifr-video" >Arta razboiului - Sun Tzu</a>|
+                    <a href="https://www.youtube.com/embed/9RqSjyfu6hg" target="ifr-video">Idiotul - Feodor Dostoievski</a>
+                    <a href="https://www.youtube.com/embed/6zfXsSJ82Fg" target="ifr-video" >Arta razboiului - Sun Tzu</a>
                     <a href="https://www.youtube.com/embed/14ByWECryHU" target="ifr-video" >1984 - Gorge Orwell</a>
                 </div>
-                <iframe name="ifr-video" width="560" height="315" src="https://www.youtube.com/embed/9RqSjyfu6hg" 
+                <iframe name="ifr-video" src="https://www.youtube.com/embed/9RqSjyfu6hg" 
                     style="border: none;" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                     allowfullscreen></iframe>
             </section>
-
+        </div>
         </main>
         <footer>
-            <a href="#" title="mergi sus" id="link-top">UP</a>
+            <a href="#" id="button-top">
+                <span id="tooltip">Mergi în susul paginii</span>
+                <span id="arrow">&#8593;</span>
+            </a>
             <p>
                 Telefon: <a href="tel:+40756985423">+4 0756 985 423</a>
             </p>
