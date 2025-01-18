@@ -4,12 +4,14 @@
     --color-border: #613516;
     --color-highlight: #a03300;
     --color-accent: #cf0000;
-}
+    --menu-bg-color: #ecf0f1;
+    --menu-text-color: #ffb597;
+  }
 
 /* START of CSS reset  */
 
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+h1, h2, h3, h4, h5, h6, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -234,6 +236,37 @@ iframe {
 #button-top:hover #tooltip {
     opacity: 1;
     visibility: visible;
+}
+
+
+
+/* bonus etapa 2 - mathlab */
+
+mi {
+    color: var(--color-highlight);
+    font-style: italic;
+    font-weight: bold;
+}
+
+mo {
+    color: var(--color-text);
+    font-size: 1.2em;
+}
+
+mfrac {
+    color: var(--color-border);
+}
+
+mtext {
+    color: black;
+    font-family: Arial, sans-serif;
+    font-style: normal;
+}
+
+math {
+    font-family: "Times New Roman", serif;
+    font-size: 1.2em;
+    line-height: 1.6;
 }
 
 @keyframes rotate-circle {

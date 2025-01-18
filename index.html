@@ -22,6 +22,7 @@
         <link rel="manifest" href="./resurse/ico/site.webmanifest" />
     
         <link rel="stylesheet" href="resurse/css/style.css" type="text/css" />
+        <link rel="stylesheet" href="resurse/css/stage3a.css" type="text/css" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"> 
@@ -34,8 +35,13 @@
         <header>
             <h1>Bookies</h1>
             <img src="resurse/ico/favicon.ico">
+            <div class="hamburger">
+                <div class="ham-1"></div>
+                <div class="ham-2"></div>
+                <div class="ham-3"></div>
+            </div>
             <nav>
-                <ul>
+                <ul>            
                     <li>
                         <a href="#acasa">Acasă</a>
                         <ul>
@@ -323,5 +329,11 @@
             </p>
         </footer>
     </body>
-
+<script>
+    document.querySelector('.hamburger').addEventListener('click', function() {
+    this.classList.toggle('active'); // Toggle the active state of the hamburger
+    document.querySelector('nav ul').classList.toggle('menu-active'); // Toggle the menu visibility
+    document.querySelector('nav').classList.toggle('anim-class'); // Toggle the menu visibility
+});
+</script>
 </html>
