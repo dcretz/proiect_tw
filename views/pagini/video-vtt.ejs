@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <title> Video VTT - Bookies</title>
+    <!-- meta-head -->
+    <%- include('../fragmente/meta-head') %>
+    <link rel="stylesheet" href="/resurse/css/video-vtt.css" type="text/css" />
+
+</head>
+
+<body>
+    <!-- header -->
+    <%- include('../fragmente/header') %>
+    <main>
+        <h1 style="text-align: center;">Videoclip cu Subtitrări</h1>
+        <video controls poster="poster-image.jpg" preload="metadata">
+            <source src="/resurse/video/video.mp4" type="video/mp4">
+            <source src="/resurse/video/video.webm" type="video/webm">
+            <track src="/resurse/video/sub/subtitles_ro.vtt" kind="subtitles" srclang="ro" label="Română" default>
+            <track src="/resurse/video/sub/subtitles_en.vtt" kind="subtitles" srclang="en" label="English">
+            Browserul dvs. nu suportă tag-ul video.
+        </video>
+    </main>
+
+    <!-- footer -->
+    <%- include('../fragmente/footer') %>
+</body>
+
+</html>

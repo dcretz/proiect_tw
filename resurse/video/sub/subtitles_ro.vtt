@@ -1,0 +1,11 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:03.000
+Bine ați venit la <c.highlight>tutorialul video</c>!
+
+00:00:03.000 --> 00:00:06.000
+Acest videoclip demonstrează utilizarea subtitrărilor.
+
+00:00:06.000 --> 00:00:10.000     line:10% align:right position:100%
+Textul poate fi afișat și în colțul din dreapta sus.
+

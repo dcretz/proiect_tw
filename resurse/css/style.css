@@ -6,6 +6,10 @@
     --color-accent: #cf0000;
     --menu-bg-color: #ecf0f1;
     --menu-text-color: #ffb597;
+    --color-link-default: #a03300; 
+    --color-link-visited: #6C757D;
+    --color-c1: rgba(0, 247, 255, 0.329); 
+    --color-c2: rgba(155, 155, 155, 0.8); 
   }
 
 /* START of CSS reset  */
@@ -442,13 +446,47 @@ button {
 button:hover {
     background-color: var(--color-accent);
 }
-  
+  /* stilizare-linkuri */
 a {
-    color: var(--color-highlight);
+    text-decoration: none;
+    color: var(--color-link-default);
+    transition: all 0.3s ease; 
 }
-  
-a:hover {
-    color: var(--color-accent);
+
+a:visited {
+    color: var(--color-link-visited); 
 }
-  
+
+a[href^="http"]::before {
+    content: "⮳"; 
+    margin-right: 0.5em; 
+    font-size: 1.5em; 
+    color: var(--color-link-default);
+    transition: color 0.3s ease; 
+}
+
+a[href^="http"]:hover::before {
+    color: var(--color-c2); 
+}
+
+main a {
+    position: relative;
+    background-image: radial-gradient(circle, 
+                    var(--color-c1) 0%, 
+                    var(--color-c1) 40%, 
+                    transparent 80%, 
+                    transparent 100%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 0%;
+    transition: background-size 0.4s ease-in-out;
+}
+
+main a:hover {
+    background-size: 100%;
+}
+
+a:active {
+    border: 1px solid var(--color-border); 
+}
 

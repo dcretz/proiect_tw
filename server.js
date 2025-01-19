@@ -95,6 +95,10 @@ app.get('/despre', (req, res) => {
   res.render('pagini/despre');
 });
 
+app.get('/video-vtt', (req, res) => {
+    res.render('pagini/video-vtt');
+});
+
 app.get('/*', (req, res) => {
     const requestedPage = req.params[0]; 
     
