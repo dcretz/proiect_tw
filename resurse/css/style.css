@@ -11,7 +11,7 @@
 /* START of CSS reset  */
 
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, blockquote, pre,
+ blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -136,8 +136,8 @@ footer{
     grid-template-areas: "z-fig1 z-fig1 z-fig1 z-fig1"
                          "z-prezentare z-prezentare z-produse z-produse"
                          "z-promovare z-calculator z-produse z-produse"
-                         "z-faq z-calculator z-produse z-produse"
-                         "z-faq z-audiobook z-audiobook z-audiobook"
+                         "z-utilizator z-calculator z-produse z-produse"
+                         "z-utilizator z-audiobook z-audiobook z-faq"
         ;
 }
 
@@ -286,8 +286,81 @@ math {
     }
 }
 
+/* Etapa 3 - print */
 
+@media print{
+    @page{
+        margin-top:4cm;
+    }
+    img, video, iframe, figure, #button-top {
+        display: none !important;
+      }
+    #banner{
+        position: absolute;
+        top: 0;
+        left: 10%;
+        width: 80%;
+        border: 2px dotted black;
+        text-align: center;
+        margin: 0 auto;
+        padding: 2px;
+    }
+    #grid-pagina{
+        display: block;
+    }
+    a{
+        color: #000;
+        text-decoration: none;
+    }
+    h1{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 2.5em;
+        text-align: center;
+        text-decoration: underline;
+    }
+    h1::after {
+        content: "";
+        display: block;
+        page-break-after: always;
+    }
+    header{
+        display: none;
+    }
+    footer {
+        page-break-before: always;
+    }
+    body::before {
+        content: "Lungu-Ailenei Dionisie";
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100px;
+        height: 2cm;
+        border: 2px double black;
+        opacity: 0.65;
+        text-align: center;
+    }
+    @page {
+        margin: 2.5cm 0.5cm;
+    }
 
+    @page :left {
+        margin-left: 2.5cm;
+        margin-right: 0.5cm;
+    }
+
+    @page :right {
+        margin-right: 2.5cm;
+        margin-left: 0.5cm;
+    }
+}
 
 /* ecran mediu */
 @media (max-width: 768px) {
@@ -341,6 +414,9 @@ math {
 }
 #promovare{
     grid-area: z-promovare;
+}
+#utilizator{
+    grid-area: z-utilizator;
 }
 #calculator{
     grid-area: z-calculator;

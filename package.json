@@ -1,0 +1,60 @@
+{
+  "name": "proiect-tw",
+  "version": "1.0.0",
+  "description": "Noua librarie online tip cafenea, dar online. Un loc cozy in care gasesti titlurile preferate, sub aroma cafelei si mirosului de carti noi.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dcretz/proiect_tw.git"
+  },
+  "keywords": [
+    "bookies",
+    "carte",
+    "cartea",
+    "cu",
+    "cafea",
+    "titluri",
+    "de",
+    "carti",
+    "librarie",
+    "online",
+    "cumpara",
+    "carti",
+    "online",
+    "livrare",
+    "rapida",
+    "cele",
+    "mai",
+    "vandute",
+    "carti",
+    "recomandari",
+    "de",
+    "lectura",
+    "carti",
+    "de",
+    "fictiune",
+    "si",
+    "non-fictiune",
+    "recenzii",
+    "de",
+    "carte",
+    "librarie",
+    "promovarea",
+    "cititului",
+    "citit",
+    "cozy"
+  ],
+  "author": "Dionisie Lungu-Ailenei",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dcretz/proiect_tw/issues"
+  },
+  "homepage": "https://github.com/dcretz/proiect_tw#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2"
+  }
+}
