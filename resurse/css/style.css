@@ -10,7 +10,8 @@
     --color-link-visited: #6C757D;
     --color-c1: rgba(0, 247, 255, 0.329); 
     --color-c2: rgba(155, 155, 155, 0.8); 
-  }
+	--ico-bg-color: #DDDD88;
+}
 
 /* START of CSS reset  */
 

@@ -1,0 +1,236 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ecf0f1;
+  color: #333;
+}
+
+nav {
+  background-color: var(--ico-bg-color);
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+nav ul li {
+  display: flex;
+  position: relative;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+nav ul li::before {
+  content: "";
+  width: 0%;
+  height: 0%;
+  position: absolute;
+  left: 50%;
+  background-color: rgba(44, 62, 80, 0.8);
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+}
+nav ul li:hover::before {
+  width: 100%;
+  height: 100%;
+  left: 0;
+}
+nav ul li:hover > ul {
+  transform: scale(1);
+  left: 0;
+  display: flex;
+  top: 100%;
+}
+nav ul li ul {
+  transform: scale(0);
+  display: flex;
+  background-color: antiquewhite;
+  position: absolute;
+  top: -200%;
+  left: -100%;
+  flex-direction: column;
+  white-space: nowrap;
+  transition: all 0.4s ease-in-out;
+}
+nav ul li:hover > a {
+  color: rgba(255, 75, 75, 0.8);
+}
+nav ul li a {
+  text-decoration: none;
+}
+
+#galerie {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, auto);
+  grid-gap: 10px;
+  grid-template-areas: "img1 img2 img3" "img4  .  img5" "img6  .  img7" "img8 img9 img10";
+}
+#galerie img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #027cf5;
+  transition: transform 1.2s, border 1.2s;
+}
+#galerie .img1 {
+  grid-area: img1;
+}
+#galerie .img2 {
+  grid-area: img2;
+}
+#galerie .img3 {
+  grid-area: img3;
+}
+#galerie .img4 {
+  grid-area: img4;
+}
+#galerie .img5 {
+  grid-area: img5;
+}
+#galerie .img6 {
+  grid-area: img6;
+}
+#galerie .img7 {
+  grid-area: img7;
+}
+#galerie .img8 {
+  grid-area: img8;
+}
+#galerie .img9 {
+  grid-area: img9;
+}
+#galerie .img10 {
+  grid-area: img10;
+}
+#galerie figure {
+  margin: 0;
+  padding: 0;
+}
+#galerie figure:hover img {
+  transform: scale(1.25) rotate(-10deg);
+  border: 5px solid #027cf5;
+}
+
+@media (max-width: 768px) {
+  .menu-active {
+    display: flex !important;
+  }
+  header {
+    height: max-content;
+  }
+  .hamburger {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+  .hamburger div {
+    height: 2px;
+    width: 25px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+  }
+  .hamburger div.ham-1 {
+    animation: anim1 1s linear 0.2s;
+    margin-top: 4px;
+  }
+  .hamburger div.ham-2 {
+    animation: anim2 1s linear 0.4s;
+    margin-top: 12px;
+  }
+  .hamburger div.ham-3 {
+    animation: anim3 1s linear 0.6s;
+    margin-top: 20px;
+  }
+  @keyframes anim1 {
+    0% {
+      transform: rotate(45deg);
+      margin-top: 12.5px;
+    }
+    50% {
+      margin-left: -50px;
+      background-color: rgb(6, 97, 92);
+      height: 15px;
+    }
+    100% {
+      transform: rotate(180deg);
+      margin-top: 4px;
+    }
+  }
+  @keyframes anim2 {
+    0% {
+      margin-top: 25px;
+      transform: rotate(-45deg);
+    }
+    50% {
+      transform: rotate(-120deg);
+      background-color: rgb(255, 166, 0);
+      height: 25px;
+      margin-left: 50px;
+    }
+    100% {
+      transform: rotate(-180deg);
+    }
+  }
+  @keyframes anim3 {
+    0% {
+      background-color: red;
+      border-radius: 20%;
+    }
+    50% {
+      background-color: green;
+      height: 25px;
+      border-radius: 50%;
+    }
+    100% {
+      background-color: blue;
+    }
+  }
+  nav ul {
+    flex-direction: column;
+    display: none;
+  }
+  nav ul li {
+    flex-direction: column;
+  }
+  nav ul li a {
+    padding-bottom: 8px;
+  }
+  nav ul li ul {
+    display: none;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    position: relative;
+  }
+  nav.anim-class {
+    animation: coming 2s linear;
+  }
+  @keyframes coming {
+    0% {
+      clip-path: polygon(0% 0%, 30% 0, 100% 50%, 30% 100%, 0% 100%);
+      margin-left: -100vw;
+      margin-right: 100vw;
+    }
+    100% {
+      clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 0% 100%);
+    }
+  }
+  #galerie {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "img1 img2" "img3 img4" "img5 img6" "img7 img8" "img9 img10";
+  }
+}
+@media (max-width: 480px) {
+  #galerie {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(10, auto);
+    grid-template-areas: "img1" "img2" "img3" "img4" "img5" "img6" "img7" "img8" "img9" "img10";
+  }
+}

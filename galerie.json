@@ -1,0 +1,534 @@
+{
+    "cale_galerie": "/resurse/imagini/galerie/",
+    "imagini": [
+		{
+		"cale_imagine": "imagine.png",
+		"titlu": "Nume imagine",
+		"descriere": "A apărut o eroare neașteptată.",
+		"sfert_ora": "1"
+		},
+		{
+		"cale_imagine": "imagine1.png",
+		"titlu": "Nume imagine2",
+		"descriere": "A apărut o eroare neașteptată 2.",
+		"sfert_ora": "2"
+		},
+		{
+		"cale_imagine": "imagine3.png",
+		"titlu": "Nume imagine3",
+		"descriere": "A apărut o eroare neașteptată 3.",
+		"sfert_ora": "3"
+		},
+		{
+		"cale_imagine": "imagine4.png",
+		"titlu": "Nume imagine4",
+		"descriere": "A apărut o eroare neașteptată 4.",
+		"sfert_ora": "4"
+		},
+		{
+		"cale_imagine": "imagine.png",
+		"titlu": "Nume imagine",
+		"descriere": "A apărut o eroare neașteptată.",
+		"sfert_ora": "1"
+		},
+		{
+		"cale_imagine": "imagine1.png",
+		"titlu": "Nume imagine2",
+		"descriere": "A apărut o eroare neașteptată 2.",
+		"sfert_ora": "2"
+		},
+		{
+		"cale_imagine": "imagine3.png",
+		"titlu": "Nume imagine3",
+		"descriere": "A apărut o eroare neașteptată 3.",
+		"sfert_ora": "3"
+		},
+		{
+		"cale_imagine": "imagine4.png",
+		"titlu": "Nume imagine4",
+		"descriere": "A apărut o eroare neașteptată 4.",
+		"sfert_ora": "4"
+		},
+		{
+		"cale_imagine": "imagine.png",
+		"titlu": "Nume imagine",
+		"descriere": "A apărut o eroare neașteptată.",
+		"sfert_ora": "1"
+		},
+		{
+		"cale_imagine": "imagine1.png",
+		"titlu": "Nume imagine2",
+		"descriere": "A apărut o eroare neașteptată 2.",
+		"sfert_ora": "2"
+		},
+		{
+		"cale_imagine": "imagine3.png",
+		"titlu": "Nume imagine3",
+		"descriere": "A apărut o eroare neașteptată 3.",
+		"sfert_ora": "3"
+		},
+		{
+		"cale_imagine": "imagine4.png",
+		"titlu": "Nume imagine4",
+		"descriere": "A apărut o eroare neașteptată 4.",
+		"sfert_ora": "4"
+		},
+		{
+		"cale_imagine": "imagine.png",
+		"titlu": "Nume imagine",
+		"descriere": "A apărut o eroare neașteptată.",
+		"sfert_ora": "1"
+		},
+		{
+		"cale_imagine": "imagine1.png",
+		"titlu": "Nume imagine2",
+		"descriere": "A apărut o eroare neașteptată 2.",
+		"sfert_ora": "2"
+		},
+		{
+		"cale_imagine": "imagine3.png",
+		"titlu": "Nume imagine3",
+		"descriere": "A apărut o eroare neașteptată 3.",
+		"sfert_ora": "3"
+		},
+		{
+		"cale_imagine": "imagine4.png",
+		"titlu": "Nume imagine4",
+		"descriere": "A apărut o eroare neașteptată 4.",
+		"sfert_ora": "4"
+		},
+		{
+		"cale_imagine": "imagine.png",
+		"titlu": "Nume imagine",
+		"descriere": "A apărut o eroare neașteptată.",
+		"sfert_ora": "1"
+		},
+		{
+		"cale_imagine": "imagine1.png",
+		"titlu": "Nume imagine2",
+		"descriere": "A apărut o eroare neașteptată 2.",
+		"sfert_ora": "2"
+		},
+		{
+		"cale_imagine": "imagine3.png",
+		"titlu": "Nume imagine3",
+		"descriere": "A apărut o eroare neașteptată 3.",
+		"sfert_ora": "3"
+		},
+		{
+		"cale_imagine": "imagine4.png",
+		"titlu": "Nume imagine4",
+		"descriere": "A apărut o eroare neașteptată 4.",
+		"sfert_ora": "4"
+		},
+		{
+		"cale_imagine": "imagine.png",
+		"titlu": "Nume imagine",
+		"descriere": "A apărut o eroare neașteptată.",
+		"sfert_ora": "1"
+		},
+		{
+		"cale_imagine": "imagine1.png",
+		"titlu": "Nume imagine2",
+		"descriere": "A apărut o eroare neașteptată 2.",
+		"sfert_ora": "2"
+		},
+		{
+		"cale_imagine": "imagine3.png",
+		"titlu": "Nume imagine3",
+		"descriere": "A apărut o eroare neașteptată 3.",
+		"sfert_ora": "3"
+		},
+		{
+		"cale_imagine": "imagine4.png",
+		"titlu": "Nume imagine4",
+		"descriere": "A apărut o eroare neașteptată 4.",
+		"sfert_ora": "4"
+		},
+		{
+		"cale_imagine": "imagine.png",
+		"titlu": "Nume imagine",
+		"descriere": "A apărut o eroare neașteptată.",
+		"sfert_ora": "1"
+		},
+		{
+		"cale_imagine": "imagine1.png",
+		"titlu": "Nume imagine2",
+		"descriere": "A apărut o eroare neașteptată 2.",
+		"sfert_ora": "2"
+		},
+		{
+		"cale_imagine": "imagine3.png",
+		"titlu": "Nume imagine3",
+		"descriere": "A apărut o eroare neașteptată 3.",
+		"sfert_ora": "3"
+		},
+		{
+		"cale_imagine": "imagine4.png",
+		"titlu": "Nume imagine4",
+		"descriere": "A apărut o eroare neașteptată 4.",
+		"sfert_ora": "4"
+		},
+		{
+		"cale_imagine": "imagine.png",
+		"titlu": "Nume imagine",
+		"descriere": "A apărut o eroare neașteptată.",
+		"sfert_ora": "1"
+		},
+		{
+		"cale_imagine": "imagine1.png",
+		"titlu": "Nume imagine2",
+		"descriere": "A apărut o eroare neașteptată 2.",
+		"sfert_ora": "2"
+		},
+		{
+		"cale_imagine": "imagine3.png",
+		"titlu": "Nume imagine3",
+		"descriere": "A apărut o eroare neașteptată 3.",
+		"sfert_ora": "3"
+		},
+		{
+		"cale_imagine": "imagine4.png",
+		"titlu": "Nume imagine4",
+		"descriere": "A apărut o eroare neașteptată 4.",
+		"sfert_ora": "4"
+		},
+		{
+		"cale_imagine": "imagine.png",
+		"titlu": "Nume imagine",
+		"descriere": "A apărut o eroare neașteptată.",
+		"sfert_ora": "1"
+		},
+		{
+		"cale_imagine": "imagine1.png",
+		"titlu": "Nume imagine2",
+		"descriere": "A apărut o eroare neașteptată 2.",
+		"sfert_ora": "2"
+		},
+		{
+		"cale_imagine": "imagine3.png",
+		"titlu": "Nume imagine3",
+		"descriere": "A apărut o eroare neașteptată 3.",
+		"sfert_ora": "3"
+		},
+		{
+		"cale_imagine": "imagine4.png",
+		"titlu": "Nume imagine4",
+		"descriere": "A apărut o eroare neașteptată 4.",
+		"sfert_ora": "4"
+		},
+		{
+		"cale_imagine": "imagine.png",
+		"titlu": "Nume imagine",
+		"descriere": "A apărut o eroare neașteptată.",
+		"sfert_ora": "1"
+		},
+		{
+		"cale_imagine": "imagine1.png",
+		"titlu": "Nume imagine2",
+		"descriere": "A apărut o eroare neașteptată 2.",
+		"sfert_ora": "2"
+		},
+		{
+		"cale_imagine": "imagine3.png",
+		"titlu": "Nume imagine3",
+		"descriere": "A apărut o eroare neașteptată 3.",
+		"sfert_ora": "3"
+		},
+		{
+		"cale_imagine": "imagine4.png",
+		"titlu": "Nume imagine4",
+		"descriere": "A apărut o eroare neașteptată 4.",
+		"sfert_ora": "4"
+		},
+		{
+		"cale_imagine": "imagine.png",
+		"titlu": "Nume imagine",
+		"descriere": "A apărut o eroare neașteptată.",
+		"sfert_ora": "1"
+		},
+		{
+		"cale_imagine": "imagine1.png",
+		"titlu": "Nume imagine2",
+		"descriere": "A apărut o eroare neașteptată 2.",
+		"sfert_ora": "2"
+		},
+		{
+		"cale_imagine": "imagine3.png",
+		"titlu": "Nume imagine3",
+		"descriere": "A apărut o eroare neașteptată 3.",
+		"sfert_ora": "3"
+		},
+		{
+		"cale_imagine": "imagine4.png",
+		"titlu": "Nume imagine4",
+		"descriere": "A apărut o eroare neașteptată 4.",
+		"sfert_ora": "4"
+		},
+		{
+		"cale_imagine": "imagine.png",
+		"titlu": "Nume imagine",
+		"descriere": "A apărut o eroare neașteptată.",
+		"sfert_ora": "1"
+		},
+		{
+		"cale_imagine": "imagine1.png",
+		"titlu": "Nume imagine2",
+		"descriere": "A apărut o eroare neașteptată 2.",
+		"sfert_ora": "2"
+		},
+		{
+		"cale_imagine": "imagine3.png",
+		"titlu": "Nume imagine3",
+		"descriere": "A apărut o eroare neașteptată 3.",
+		"sfert_ora": "3"
+		},
+		{
+		"cale_imagine": "imagine4.png",
+		"titlu": "Nume imagine4",
+		"descriere": "A apărut o eroare neașteptată 4.",
+		"sfert_ora": "4"
+		},
+		{
+		"cale_imagine": "imagine.png",
+		"titlu": "Nume imagine",
+		"descriere": "A apărut o eroare neașteptată.",
+		"sfert_ora": "1"
+		},
+		{
+		"cale_imagine": "imagine1.png",
+		"titlu": "Nume imagine2",
+		"descriere": "A apărut o eroare neașteptată 2.",
+		"sfert_ora": "2"
+		},
+		{
+		"cale_imagine": "imagine3.png",
+		"titlu": "Nume imagine3",
+		"descriere": "A apărut o eroare neașteptată 3.",
+		"sfert_ora": "3"
+		},
+		{
+		"cale_imagine": "imagine4.png",
+		"titlu": "Nume imagine4",
+		"descriere": "A apărut o eroare neașteptată 4.",
+		"sfert_ora": "4"
+		},
+		{
+		"cale_imagine": "imagine.png",
+		"titlu": "Nume imagine",
+		"descriere": "A apărut o eroare neașteptată.",
+		"sfert_ora": "1"
+		},
+		{
+		"cale_imagine": "imagine1.png",
+		"titlu": "Nume imagine2",
+		"descriere": "A apărut o eroare neașteptată 2.",
+		"sfert_ora": "2"
+		},
+		{
+		"cale_imagine": "imagine3.png",
+		"titlu": "Nume imagine3",
+		"descriere": "A apărut o eroare neașteptată 3.",
+		"sfert_ora": "3"
+		},
+		{
+		"cale_imagine": "imagine4.png",
+		"titlu": "Nume imagine4",
+		"descriere": "A apărut o eroare neașteptată 4.",
+		"sfert_ora": "4"
+		},
+		{
+		"cale_imagine": "imagine.png",
+		"titlu": "Nume imagine",
+		"descriere": "A apărut o eroare neașteptată.",
+		"sfert_ora": "1"
+		},
+		{
+		"cale_imagine": "imagine1.png",
+		"titlu": "Nume imagine2",
+		"descriere": "A apărut o eroare neașteptată 2.",
+		"sfert_ora": "2"
+		},
+		{
+		"cale_imagine": "imagine3.png",
+		"titlu": "Nume imagine3",
+		"descriere": "A apărut o eroare neașteptată 3.",
+		"sfert_ora": "3"
+		},
+		{
+		"cale_imagine": "imagine4.png",
+		"titlu": "Nume imagine4",
+		"descriere": "A apărut o eroare neașteptată 4.",
+		"sfert_ora": "4"
+		},
+		{
+		"cale_imagine": "imagine.png",
+		"titlu": "Nume imagine",
+		"descriere": "A apărut o eroare neașteptată.",
+		"sfert_ora": "1"
+		},
+		{
+		"cale_imagine": "imagine1.png",
+		"titlu": "Nume imagine2",
+		"descriere": "A apărut o eroare neașteptată 2.",
+		"sfert_ora": "2"
+		},
+		{
+		"cale_imagine": "imagine3.png",
+		"titlu": "Nume imagine3",
+		"descriere": "A apărut o eroare neașteptată 3.",
+		"sfert_ora": "3"
+		},
+		{
+		"cale_imagine": "imagine4.png",
+		"titlu": "Nume imagine4",
+		"descriere": "A apărut o eroare neașteptată 4.",
+		"sfert_ora": "4"
+		},
+		{
+		"cale_imagine": "imagine.png",
+		"titlu": "Nume imagine",
+		"descriere": "A apărut o eroare neașteptată.",
+		"sfert_ora": "1"
+		},
+		{
+		"cale_imagine": "imagine1.png",
+		"titlu": "Nume imagine2",
+		"descriere": "A apărut o eroare neașteptată 2.",
+		"sfert_ora": "2"
+		},
+		{
+		"cale_imagine": "imagine3.png",
+		"titlu": "Nume imagine3",
+		"descriere": "A apărut o eroare neașteptată 3.",
+		"sfert_ora": "3"
+		},
+		{
+		"cale_imagine": "imagine4.png",
+		"titlu": "Nume imagine4",
+		"descriere": "A apărut o eroare neașteptată 4.",
+		"sfert_ora": "4"
+		},
+		{
+		"cale_imagine": "imagine.png",
+		"titlu": "Nume imagine",
+		"descriere": "A apărut o eroare neașteptată.",
+		"sfert_ora": "1"
+		},
+		{
+		"cale_imagine": "imagine1.png",
+		"titlu": "Nume imagine2",
+		"descriere": "A apărut o eroare neașteptată 2.",
+		"sfert_ora": "2"
+		},
+		{
+		"cale_imagine": "imagine3.png",
+		"titlu": "Nume imagine3",
+		"descriere": "A apărut o eroare neașteptată 3.",
+		"sfert_ora": "3"
+		},
+		{
+		"cale_imagine": "imagine4.png",
+		"titlu": "Nume imagine4",
+		"descriere": "A apărut o eroare neașteptată 4.",
+		"sfert_ora": "4"
+		},
+		{
+		"cale_imagine": "imagine.png",
+		"titlu": "Nume imagine",
+		"descriere": "A apărut o eroare neașteptată.",
+		"sfert_ora": "1"
+		},
+		{
+		"cale_imagine": "imagine1.png",
+		"titlu": "Nume imagine2",
+		"descriere": "A apărut o eroare neașteptată 2.",
+		"sfert_ora": "2"
+		},
+		{
+		"cale_imagine": "imagine3.png",
+		"titlu": "Nume imagine3",
+		"descriere": "A apărut o eroare neașteptată 3.",
+		"sfert_ora": "3"
+		},
+		{
+		"cale_imagine": "imagine4.png",
+		"titlu": "Nume imagine4",
+		"descriere": "A apărut o eroare neașteptată 4.",
+		"sfert_ora": "4"
+		},
+		{
+		"cale_imagine": "imagine.png",
+		"titlu": "Nume imagine",
+		"descriere": "A apărut o eroare neașteptată.",
+		"sfert_ora": "1"
+		},
+		{
+		"cale_imagine": "imagine1.png",
+		"titlu": "Nume imagine2",
+		"descriere": "A apărut o eroare neașteptată 2.",
+		"sfert_ora": "2"
+		},
+		{
+		"cale_imagine": "imagine3.png",
+		"titlu": "Nume imagine3",
+		"descriere": "A apărut o eroare neașteptată 3.",
+		"sfert_ora": "3"
+		},
+		{
+		"cale_imagine": "imagine4.png",
+		"titlu": "Nume imagine4",
+		"descriere": "A apărut o eroare neașteptată 4.",
+		"sfert_ora": "4"
+		},
+		{
+		"cale_imagine": "imagine.png",
+		"titlu": "Nume imagine",
+		"descriere": "A apărut o eroare neașteptată.",
+		"sfert_ora": "1"
+		},
+		{
+		"cale_imagine": "imagine1.png",
+		"titlu": "Nume imagine2",
+		"descriere": "A apărut o eroare neașteptată 2.",
+		"sfert_ora": "2"
+		},
+		{
+		"cale_imagine": "imagine3.png",
+		"titlu": "Nume imagine3",
+		"descriere": "A apărut o eroare neașteptată 3.",
+		"sfert_ora": "3"
+		},
+		{
+		"cale_imagine": "imagine4.png",
+		"titlu": "Nume imagine4",
+		"descriere": "A apărut o eroare neașteptată 4.",
+		"sfert_ora": "4"
+		},
+		{
+		"cale_imagine": "imagine.png",
+		"titlu": "Nume imagine",
+		"descriere": "A apărut o eroare neașteptată.",
+		"sfert_ora": "1"
+		},
+		{
+		"cale_imagine": "imagine1.png",
+		"titlu": "Nume imagine2",
+		"descriere": "A apărut o eroare neașteptată 2.",
+		"sfert_ora": "2"
+		},
+		{
+		"cale_imagine": "imagine3.png",
+		"titlu": "Nume imagine3",
+		"descriere": "A apărut o eroare neașteptată 3.",
+		"sfert_ora": "3"
+		},
+		{
+		"cale_imagine": "imagine4.png",
+		"titlu": "Nume imagine4",
+		"descriere": "A apărut o eroare neașteptată 4.",
+		"sfert_ora": "4"
+		}
+	]
+  }
+  

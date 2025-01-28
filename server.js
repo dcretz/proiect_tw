@@ -1,9 +1,12 @@
+const { timeLog, timeStamp, time } = require('console');
 const express = require('express');
+const resizeImage = require('./resizeImages');
 const fs = require('fs');
 const path = require('path');
+const sass = require('sass'); // Adăugăm pachetul sass
 const app = express();
 
-const vect_foldere = ["temp"];
+const vect_foldere = ["temp", "backup"]; // Adăugăm folderul backup
 
 vect_foldere.forEach((folder) => {
     const folderPath = path.join(__dirname, folder);
@@ -16,11 +19,12 @@ vect_foldere.forEach((folder) => {
     }
 });
 
-
 app.set('view engine', 'ejs');
 
 const obGlobal = {
-    obErori: null
+    obErori: null,
+    folderScss: path.join(__dirname, 'resurse', 'css'), // Definim folderScss
+    folderCss: path.join(__dirname, 'resurse', 'css')   // Definim folderCss
 };
 
 function initErori() {
@@ -87,8 +91,66 @@ app.use('/resurse*', (req, res, next) => {
     next();
 });
 
+function compileazaScss(caleScss, caleCss) {
+    const scssPath = path.isAbsolute(caleScss) ? caleScss : path.join(obGlobal.folderScss, caleScss);
+    const cssPath = caleCss ? (path.isAbsolute(caleCss) ? caleCss : path.join(obGlobal.folderCss, caleCss)) : scssPath.replace(/\.scss$/, '.css');
+
+    const backupPath = path.join(__dirname, 'backup', 'resurse', 'css');
+    if (!fs.existsSync(backupPath)) {
+		fs.mkdirSync(backupPath, { recursive: true });
+	}
+	
+	if (fs.existsSync(cssPath)) {
+		const cssBackupPath = path.join(backupPath, path.basename(cssPath));
+		try {
+			fs.copyFileSync(cssPath, cssBackupPath);
+		} catch (err) {
+			console.error('Eroare la copierea fișierului CSS în backup:', err);
+		}
+	}
+	
+	try {
+		const result = sass.renderSync({ file: scssPath });
+		fs.writeFileSync(cssPath, result.css);
+		console.log(`Fișierul SCSS ${scssPath} a fost compilat în ${cssPath}`);
+	} catch (err) {
+		console.error('Eroare la compilarea fișierului SCSS:', err);
+	}
+}
+
+function compileazaToateScss() {
+    const scssFiles = fs.readdirSync(obGlobal.folderScss).filter(file => file.endsWith('.scss'));
+    scssFiles.forEach(file => compileazaScss(file));
+}
+
+compileazaToateScss();
+
+fs.watch(obGlobal.folderScss, (eventType, filename) => {
+    if (filename && filename.endsWith('.scss')) {
+        console.log(`Fișierul ${filename} a fost modificat. Se compilează...`);
+        compileazaScss(filename);
+    }
+});
+
 app.get(['/', '/index', '/home'], (req, res) => {
-    res.render('pagini/index', {ipUser: req.ip});
+    const galeriePath = path.join(__dirname, 'galerie.json');
+    fs.readFile(galeriePath, 'utf-8', (err, data) => {
+        if (err) {
+            console.error('Eroare la citirea fisierului galerie:', err);
+            return;
+        }
+        const galerie = JSON.parse(data); 
+        const galerieCuImagini = [];
+        for (let i = 0; i < galerie.imagini.length; i++) {
+            let im = galerie.imagini[i];
+            im.imagine = galerie.cale_galerie + im.cale_imagine; 
+            const data_min_quarter = Math.floor(new Date().getMinutes() / 15) + 1;
+            if (data_min_quarter == im.sfert_ora) {
+                galerieCuImagini.push(im);
+            }
+        }
+        res.render('pagini/index', {ipUser: req.ip, gal:galerieCuImagini });
+    });
 });
 
 app.get('/despre', (req, res) => {
@@ -118,9 +180,7 @@ app.get('/*', (req, res) => {
 const PORT = 8080;
 
 app.listen(PORT, () => {
-
     console.log(`Server is running on http://localhost:${PORT}`);
-
     console.log(__dirname);
     console.log(__filename);
     console.log(process.cwd());

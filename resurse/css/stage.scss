@@ -6,7 +6,8 @@ $hover-bg-color: #2c3e50cc;
 $hover-text-color: #fff;
 $background-submenu: antiquewhite;
 $text-color-menu: #ff4b4bcc;
-
+$ico-bg-color: #DDDD88;
+$border-width: 1px;
 body {
     font-family: Arial, sans-serif;
     background-color: $sa-color;
@@ -15,7 +16,7 @@ body {
 
 // Nesting și styling pentru meniuri
 nav {
-    background-color: var(--menu-bg-color);
+    background-color: var(--ico-bg-color);
     ul {
         list-style: none;
         margin: 0;
@@ -73,6 +74,49 @@ nav {
             }
         }
         
+    }
+}
+
+//galery
+
+#galerie {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-gap: 10px;
+    grid-template-areas: 
+        "img1 img2 img3"
+        "img4  .  img5"
+        "img6  .  img7"
+        "img8 img9 img10";
+
+    img {
+        width: 100%;
+        height: auto;
+		border: $border-width solid $prim-color;
+        transition: transform 1.2s, border 1.2s;
+    }
+
+    .img1 { grid-area: img1; }
+    .img2 { grid-area: img2; }
+    .img3 { grid-area: img3; }
+    .img4 { grid-area: img4; }
+    .img5 { grid-area: img5; }
+    .img6 { grid-area: img6; }
+    .img7 { grid-area: img7; }
+    .img8 { grid-area: img8; }
+    .img9 { grid-area: img9; }
+    .img10 { grid-area: img10; }
+
+    figure {
+        margin: 0;
+        padding: 0;
+        // overflow: hidden;
+    }
+
+    figure:hover img {
+        transform: scale(1.25) rotate(-10deg);
+        border: calc($border-width + 4px) solid $prim-color;
     }
 }
 
@@ -185,5 +229,33 @@ nav {
             }
             
         }
+    }
+	#galerie {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas: 
+            "img1 img2"
+            "img3 img4"
+            "img5 img6"
+            "img7 img8"
+            "img9 img10";
+    }
+}
+
+@media (max-width: 480px) {
+    #galerie {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(10, auto);
+        grid-template-areas: 
+            "img1"
+            "img2"
+            "img3"
+            "img4"
+            "img5"
+            "img6"
+            "img7"
+            "img8"
+            "img9"
+            "img10";
     }
 }

@@ -1,0 +1,22 @@
+<section>
+    <h2>Galerie</h2>
+    <div id="galerie">
+        <% var len = gal.length > 10 ? 10 : gal.length %>
+        <% function toRoman(num) {
+            var roman = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"];
+            return roman[num - 1];
+        } %>
+        <% for(let i = 0; i < len; i++){ %>
+            <figure class="galerie__item img<%= i + 1 %>">
+                <picture>
+                    <source srcset="/resurse/imagini/galerie/<%= gal[i].cale_imagine %>" media="(max-width: 480px)" />
+                    <source srcset="/resurse/imagini/galerie/<%= gal[i].cale_imagine %>" media="(max-width: 1200px)" />
+                    <img src="/resurse/imagini/galerie/<%= gal[i].cale_imagine %>" 
+                         alt="<%= gal[i].alt || gal[i].cale_imagine %>" 
+                         title="<%= gal[i].descriere %>" />
+                </picture>
+                <figcaption><%= toRoman(i + 1) %>. <%= gal[i].titlu %></figcaption>
+            </figure>
+        <% } %>
+    </div>
+</section>
