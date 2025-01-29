@@ -259,3 +259,25 @@ nav {
             "img10";
     }
 }
+
+
+.styled-hr {
+    border: 0;
+    height: 5px;
+	background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 44%, rgba(255,255,255,0) 44%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 56%, rgba(0,0,0,1) 56%, rgba(0,0,0,1) 100%);    margin: 20px 0;
+    border-radius: 5px;
+	position: relative;
+	opacity: 1;
+	overflow: visible;
+}
+
+.styled-hr::before {
+    content: "★";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0 5px;
+    font-size: 20px;
+	height: max-content;
+}

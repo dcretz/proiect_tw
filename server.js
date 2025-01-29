@@ -120,7 +120,10 @@ function compileazaScss(caleScss, caleCss) {
 
 function compileazaToateScss() {
     const scssFiles = fs.readdirSync(obGlobal.folderScss).filter(file => file.endsWith('.scss'));
-    scssFiles.forEach(file => compileazaScss(file));
+    scssFiles.forEach(file => {
+        compileazaScss(file);
+        // console.log(`Fișierul ${file} a fost compilat.`);
+    });
 }
 
 compileazaToateScss();
