@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <title>Despre noi - Bookies</title>
+    <!-- meta-head -->
+    <%- include('../fragmente/meta-head') %>
+	<link rel="stylesheet" href="/resurse/css/produs.css" type="text/css" />
+</head>
+
+<body>
+    <!-- header -->
+    <%- include('../fragmente/header') %>
+    <main>
+		<div class="produs-detalii">
+			<div class="container-flex">
+				<img src="/resurse/imagini/produse/<%= produs.imagine %>" class="carte-prez" alt="<%= produs.nume %>">
+				<div>
+					<h2><u><%= produs.nume %></u></h2><br>
+					<p><span class="descr">Descriere:</span> <%= produs.descriere %></p>
+					<p><span class="descr">Tip:</span> <%= produs.tip_produs %></p>
+					<p><span class="descr">Gen:</span> <%= produs.gen_carte %></p>
+					<p><span class="descr">Pagini:</span> <%= produs.pagini %></p>
+					<p><span class="descr">Autor:</span> <%= produs.autor %></p>
+					<% if (produs.semn_de_carte) { %>
+						<p><span class="descr">Semn de carte:</span> Inclus</p>
+					<% } else { %>
+						<p><span class="descr">Semn de carte:</span> Nu este inclus</p>
+					<% } %>
+					<p><span class="descr">Data înregistrării:</span> <%= new Date(produs.data_inreg).toLocaleDateString() %></p>
+					<p class="pret"><span class="descr">Preț:</span> <%= produs.pret %> RON</p>
+					<button>Cumpara</button>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="recenzii">
+			<h3>Recenzii</h3>
+			<div class="comentariu">
+				<p class="user">Dionisie Lungu</p>
+				<p class="data">06.02.2025 14:42</p>
+				<!-- <hr> -->
+				<p class="com-text">Aceasta este o carte foarte faina!</p>				
+			</div>
+		</div>
+		
+
+        </section>
+    </main>
+
+    <!-- footer -->
+    <%- include('../fragmente/footer') %>
+</body>
+
+</html>

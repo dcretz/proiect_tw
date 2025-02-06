@@ -1,0 +1,80 @@
+.produse-container {
+	margin-top: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+article {
+	display: flex;
+	flex-direction: row;
+	border: 1px solid #ccc;
+	padding: 15px 15px 50px 15px;
+	width: 100%;
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+	transition: all 0.2s ease-in-out;
+}
+article:hover{
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.644);
+
+}
+.col1 {
+	width: 100%;
+	text-align: center;
+}
+.col1 img {
+	max-width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+.col2 {
+	// background-color: rebeccapurple;
+	position: relative;
+	margin-top: 50px;
+	width: 60%;
+	padding-left: 15px;
+	height: 100%;
+}
+.bold {
+	font-weight: bold;
+	background-color: #ddd;
+	padding: 2px 5px;
+	border-radius: 3px;
+}
+.hidden {
+	display: none;
+}
+.carte-prez{
+	width: 150px;
+}
+.img-desc{
+	display: flex;
+	gap: 20px;
+	text-align: left;
+}
+button{
+	color: #e7e7e7;
+	padding: 15px 25px;
+}
+.fixed-medie{
+	position: fixed;
+	top: 50px;
+	right: 50px;
+	background-color: green;
+	color: white;
+}
+.vezi{
+	position: absolute;
+	bottom: 50px;
+	right: 50px;
+}
+.vezi a{
+	// background: rebeccapurple;
+	padding: 15px 25px;
+	border: 1px solid gray;
+	transition: all 0.2s ease-in-out;
+}
+.vezi a:hover{
+	background: none;
+	background-color: #ccc;
+	color: black;
+}

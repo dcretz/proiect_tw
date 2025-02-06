@@ -13,13 +13,11 @@
         <!-- header -->
         <%- include('../fragmente/header') %>
         <main>
-			<h1><%= titlu %></h1>
-			<p><%= text %></p>
-			<p>DESCRIERE: <%= descriere %></p>
-		
-			<img width="600px" height="300px" src="<%= imagine %>" alt="Eroare" />
-			<!-- <a href="/">Înapoi la pagina principală</a> -->
-			
+
+			<%- include('../fragmente/galerie') %>
+
+			<%- include('../fragmente/galerie-animata') %>
+
 		</main>
         <!-- footer -->
         <%- include('../fragmente/footer') %>

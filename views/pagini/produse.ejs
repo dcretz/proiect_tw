@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>
+            Bookies
+        </title>
+        <!-- meta-head -->
+        <%- include('../fragmente/meta-head') %>
+		<link rel="stylesheet" href="/resurse/css/produse.css" type="text/css" />
+
+    </head>
+
+    <body>
+        <!-- header -->
+        <%- include('../fragmente/header') %>
+        <main>
+			<h1>Lista de Produse</h1>
+			
+			
+			<!-- Filtre -->
+
+			<section id="filters">
+				<!-- Text Filter -->
+				<label for="searchText">Cautati dupa nume:</label>
+				<input type="text" id="searchText" placeholder="Cautati produse...">
+				<br />
+				<br />
+				<!-- Range Filter -->
+				<label for="priceRange">Pret pana in:</label>
+				<span id="priceRangeValue">0</span> Lei
+				<input type="range" id="priceRange" min="0" max="500" value="500">
+				<span id="priceRangeValue">500</span> Lei 
+				( <span id="actualPriceValue">500</span> Lei)
+				<br />
+				<br />
+			
+				<!-- Subcategory Checkboxes -->
+				<label>Subcategorie:</label>
+				<div id="subcategories">
+				<% categorii.forEach(element => { %>
+					<input type="checkbox" id="<%= element %>" checked>
+					<label for="<%= element %>"><%= element %></label>
+				<% }); %>
+				<input type="checkbox" id="toate1" checked>
+				<label for="toate1">Toate</label>
+				<!-- <input type="checkbox" id="subcat1">
+				<label for="subcat1">Subcategorie 1</label>
+				<input type="checkbox" id="subcat2">
+				<label for="subcat2">Subcategorie 2</label> -->
+				<!-- Add more checkboxes dynamically -->
+				</div>
+			
+				<br />
+				<br />
+				<!-- Multi-Select Filter -->
+				<label for="excludeValues">Selectați valorile pe care NU le doriți:</label>
+				<select id="excludeValues" >
+				<option value="none">None</option>
+				<option value="semn_de_carte">Semn de carte</option>
+				<!-- Add more options dynamically -->
+				</select>
+			
+				<br />
+				<br />
+				<!-- Apply Filters Button -->
+				<button id="applyFilters">Filtrează</button>
+			
+				<br />
+				<br />
+				<!-- Sort Buttons -->
+				<button id="sortAsc">Sortare Ascendentă</button>
+				<button id="sortDesc">Sortare Descendentă</button>
+			
+				<!-- Calculation Button -->
+				<button id="calcPrice">Calculeaza media de pret</button>
+			
+				<!-- Reset Filters Button -->
+				<button id="resetFilters">Resetează</button>
+			
+				<div id="calcResult" style="display: none;"></div>
+			</section>
+			
+			
+
+			<section class="produse-container">
+				<% produse.forEach(produs => { %>
+					<article id="ar_ent_<%= produs.id %>" class="<%= produs.gen_carte %>">
+						<div class="col1">
+							<h2><%= produs.nume %></h2>
+							<p class="bold">Categorie: <%= produs.gen_carte %></p>
+							<div class="img-desc">
+								<img src="/resurse/imagini/produse/<%= produs.imagine %>" class="carte-prez" alt="<%= produs.nume %>">
+								<p><%= produs.descriere %></p>
+							</div>
+						</div>
+
+						<div class="col2">
+							<p><span class="bold">Pagini:</span> <%= produs.pagini %></p>
+							<p><span class="bold">Preț:</span><span id="pret"><%= produs.pret %></span> RON</p>
+							<p><span class="bold">Autor:</span> <%= produs.autor.join(", ") %></p>
+							<p><span class="bold">Înregistrat la:</span> 
+								<time datetime="<%= produs.data_inreg %>">
+									<%= new Date(produs.data_inreg).toLocaleDateString('ro-RO', { day: '2-digit', month: 'long', year: 'numeric', weekday: 'long' }) %>
+								</time>
+							</p>
+							<p><span class="bold">Semn de carte inclus:</span> <span id="semn"><%= produs.semn_de_carte ? "Da" : "Nu" %></span></p>
+							<div class="vezi">
+								<a href="/produse/<%= produs.gen_carte %>/<%= encodeURIComponent(produs.nume) %>">Vezi entitate</a>
+							</div>
+						</div>
+					</article>
+				<% }); %>
+				</section>
+
+		</main>
+        <!-- footer -->
+        <%- include('../fragmente/footer') %>
+    </body>
+<script>
+    document.querySelector('.hamburger').addEventListener('click', function() {
+    this.classList.toggle('active'); 
+    document.querySelector('nav ul').classList.toggle('menu-active'); 
+    document.querySelector('nav').classList.toggle('anim-class'); 
+});
+// <input type="range" id="priceRange" min="0" max="500" value="500">
+
+	document.getElementById("priceRange").addEventListener('input', eve => {
+		// console.log(eve.target.value);
+		document.getElementById("actualPriceValue").innerHTML = eve.target.value;
+	});
+
+	document.getElementById("applyFilters").addEventListener('click', ev => {
+		const name = document.getElementById("searchText").value.toLowerCase();
+		// console.log(name);
+		const price = document.getElementById("actualPriceValue").innerText;
+		// console.log(price);
+		const subcategorie = document.querySelectorAll("#subcategories input:checked");
+		// console.log(subcategorie);
+		const exclude = document.getElementById("excludeValues").value;
+		// console.log(exclude);
+
+		const entitati = document.querySelectorAll("article");
+		entitati.forEach(entitate => {
+
+			// verifica numele
+			const nameEn = entitate.querySelector("h2").innerText.toLowerCase();
+
+			// console.log(entitate);
+			const verifName = !nameEn.includes(name);
+			// verifica pretul
+			const pret = entitate.querySelector("#pret").innerText;
+
+			const verifPret = parseInt(price) < parseInt(pret);
+
+			// verifica subcategoria
+			const categ = entitate.className;
+			let verifCateg = false;
+			subcategorie.forEach(c =>{
+				if (c.id === categ){
+					verifCateg = true;
+				}
+				if (c.id === "toate1"){
+					verifCateg = true;
+				}
+			});
+			const semn = entitate.querySelector("#semn").innerText.toLowerCase();
+			const verifEx = exclude === 'semn_de_carte' && semn === "da";
+			// console.log(`categorie ${verifCateg}; exclude ${verifEx}; name ${verifName}; pret: ${verifPret}`);
+			if( !verifCateg || verifEx || verifName || verifPret){
+				entitate.classList.add('hidden');
+			} else {
+				entitate.classList.remove('hidden');
+			}
+
+		})
+	})
+	document.getElementById("sortAsc").addEventListener('click', ev => {
+    const container = document.querySelector(".produse-container");
+    const entitati = Array.from(document.querySelectorAll("article"));
+
+    entitati.sort((a, b) => {
+        const categorieA = a.className.toLowerCase();
+        const categorieB = b.className.toLowerCase();
+
+        const categorieCompare = categorieA.localeCompare(categorieB);
+        if (categorieCompare !== 0) {
+            return categorieCompare; 
+        }
+
+        const pretA = parseFloat(a.querySelector("#pret").innerText);
+        const pretB = parseFloat(b.querySelector("#pret").innerText);
+        return pretA - pretB;
+    });
+
+    const newContainer = document.createElement("div");
+    newContainer.classList.add("produse-container");
+
+    entitati.forEach(entitate => newContainer.appendChild(entitate));
+
+    container.parentNode.replaceChild(newContainer, container);
+});
+
+document.getElementById("sortDesc").addEventListener('click', ev => {
+    const container = document.querySelector(".produse-container");
+    const entitati = Array.from(document.querySelectorAll("article"));
+
+    entitati.sort((a, b) => {
+        const categorieA = a.className.toLowerCase();
+        const categorieB = b.className.toLowerCase();
+
+        const categorieCompare = categorieB.localeCompare(categorieA);
+        if (categorieCompare !== 0) {
+            return categorieCompare; 
+        }
+        const pretA = parseFloat(a.querySelector("#pret").innerText);
+        const pretB = parseFloat(b.querySelector("#pret").innerText);
+        return pretB - pretA; 
+    });
+
+    const newContainer = document.createElement("div");
+    newContainer.classList.add("produse-container");
+
+    entitati.forEach(entitate => newContainer.appendChild(entitate));
+
+    container.parentNode.replaceChild(newContainer, container);
+});
+
+document.getElementById("calcPrice").addEventListener('click', ev => {
+  const entitati = document.querySelectorAll("article");
+  let total = 0;
+  
+  entitati.forEach(entitate => {
+    const pret = parseFloat(entitate.querySelector("#pret").innerText);
+    total += pret;
+  });
+
+  const mediePret = total / entitati.length;
+  console.log(mediePret);
+
+  const showMedie = document.createElement('div');
+  showMedie.innerText = `Media prețului este: ${mediePret.toFixed(2)} Lei`;
+  showMedie.classList.add("fixed-medie");
+
+  document.body.appendChild(showMedie);
+
+  setTimeout(() => {
+	showMedie.classList.remove('fixed-medie');
+    showMedie.innerHTML = ''; 
+  }, 2000);
+});
+
+document.getElementById("resetFilters").addEventListener('click', ev => {
+    var name = document.getElementById("searchText");
+    var price = document.getElementById("priceRange");
+    var subcategorie = document.querySelectorAll("#subcategories input");
+    var exclude = document.getElementById("excludeValues");
+
+    // Resetare valori
+    name.value = '';  
+    price.value = 500; 
+    subcategorie.forEach(s => s.checked = true); 
+    exclude.value = 'none'; 
+});
+
+
+
+
+</script>
+</html>

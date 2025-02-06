@@ -27,6 +27,26 @@
                     </li>
                 </ul>
             </li>
+
+			<!-- modificare la prezentare -->
+
+			<!-- <li>
+                <a href="#footer">Button pentru button</a>
+			</li> -->
+
+			<li>
+				<a href="/galerie">Galerii</a>
+			</li>
+			<li>
+				<a href="/produse">Produse</a>
+				<ul>
+					<li><a href="/produse/toate"> Toate </a> </li>
+					<% categorii.forEach(element => { %>
+						<li><a href="/produse/<%= element %>"> <%= element %> </a> </li>
+					<% }); %>
+				</ul>
+			</li>
+
             <li>
                 <a href="#categorii">Categorii</a>
                 <ul>

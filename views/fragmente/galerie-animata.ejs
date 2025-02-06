@@ -1,0 +1,18 @@
+<section>
+    <h2>Galerie dinamica</h2>
+	<div class="container-gal">
+    <div id="galerie-dinamica" data-lendi="<%= dinam.length %>">
+		<% for(let i = 0; i < dinam.length; i++){ %>
+		<figure class="galerie__item img<%= i + 1 %>">
+			<picture>
+				<source srcset="/resurse/imagini/produse/<%= dinam[i].cale_imagine %>" media="(max-width: 480px)" />
+				<source srcset="/resurse/imagini/produse/<%= dinam[i].cale_imagine %>" media="(max-width: 1200px)" />
+				<img src="/resurse/imagini/produse/<%= dinam[i].cale_imagine %>" 
+					 alt="<%= dinam[i].alt || dinam[i].cale_imagine %>" 
+					 title="<%= dinam[i].descriere %>" />
+			</picture>
+		</figure>
+		<% } %>
+	</div>
+	</div>
+</section>

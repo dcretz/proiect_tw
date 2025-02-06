@@ -11,21 +11,24 @@
         "status": true,
         "titlu": "Cerere Invalidă",
         "text": "Cererea trimisă către server este incorectă.",
-        "imagine": "400_error.png"
+        "imagine": "400_error.png",
+		"descriere": "acum se face prezentarea"
       },
       {
         "identificator": 404,
         "status": true,
         "titlu": "Pagina nu a fost găsită",
         "text": "Pagina pe care o căutați nu există.",
-        "imagine": "404_error.png"
+        "imagine": "404_error.png",
+		"descriere": "acum se face prezentarea"
       },
       {
         "identificator": 403,
         "status": true,
         "titlu": "Acces interzis",
         "text": "Nu aveți permisiunea de a accesa această pagină.",
-        "imagine": "403_error.png"
+        "imagine": "403_error.png",
+		"descriere": "acum se face prezentarea"
       }
     ]
   }

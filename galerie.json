@@ -1,534 +1,1085 @@
 {
-    "cale_galerie": "/resurse/imagini/galerie/",
+    "cale_galerie": "/resurse/imagini/produse/",
     "imagini": [
 		{
-		"cale_imagine": "imagine.png",
-		"titlu": "Nume imagine",
-		"descriere": "A apărut o eroare neașteptată.",
-		"sfert_ora": "1"
+			"cale_imagine": "templari.jpg",
+			"titlu": "Misterul Templierilor",
+			"descriere": "O carte despre enigmele cavalerilor templieri.",
+			"sfert_ora": "3"
 		},
 		{
-		"cale_imagine": "imagine1.png",
-		"titlu": "Nume imagine2",
-		"descriere": "A apărut o eroare neașteptată 2.",
-		"sfert_ora": "2"
+			"cale_imagine": "gandeste.jpg",
+			"titlu": "Gandeste si devii bogat",
+			"descriere": "Un ghid despre succes si motivatie.",
+			"sfert_ora": "1"
 		},
 		{
-		"cale_imagine": "imagine3.png",
-		"titlu": "Nume imagine3",
-		"descriere": "A apărut o eroare neașteptată 3.",
-		"sfert_ora": "3"
+			"cale_imagine": "povestea.jpg",
+			"titlu": "Povestea Noastra",
+			"descriere": "O calatorie prin istoria familiei regale.",
+			"sfert_ora": "2"
 		},
 		{
-		"cale_imagine": "imagine4.png",
-		"titlu": "Nume imagine4",
-		"descriere": "A apărut o eroare neașteptată 4.",
-		"sfert_ora": "4"
+			"cale_imagine": "univers.jpg",
+			"titlu": "Secretele Universului",
+			"descriere": "O explorare a marilor mistere cosmice.",
+			"sfert_ora": "4"
 		},
 		{
-		"cale_imagine": "imagine.png",
-		"titlu": "Nume imagine",
-		"descriere": "A apărut o eroare neașteptată.",
-		"sfert_ora": "1"
+			"cale_imagine": "biblia.jpg",
+			"titlu": "Biblia Ilustrata",
+			"descriere": "O versiune ilustrata a Bibliei.",
+			"sfert_ora": "1"
 		},
 		{
-		"cale_imagine": "imagine1.png",
-		"titlu": "Nume imagine2",
-		"descriere": "A apărut o eroare neașteptată 2.",
-		"sfert_ora": "2"
+			"cale_imagine": "magia.jpg",
+			"titlu": "Magia Gandirii",
+			"descriere": "Cum sa iti imbunatatesti viata prin gandire pozitiva.",
+			"sfert_ora": "3"
 		},
 		{
-		"cale_imagine": "imagine3.png",
-		"titlu": "Nume imagine3",
-		"descriere": "A apărut o eroare neașteptată 3.",
-		"sfert_ora": "3"
+			"cale_imagine": "python.jpg",
+			"titlu": "Programare in Python",
+			"descriere": "Un ghid complet pentru incepatori.",
+			"sfert_ora": "2"
 		},
 		{
-		"cale_imagine": "imagine4.png",
-		"titlu": "Nume imagine4",
-		"descriere": "A apărut o eroare neașteptată 4.",
-		"sfert_ora": "4"
+			"cale_imagine": "europa.jpg",
+			"titlu": "Istoria Europei",
+			"descriere": "O analiza detaliata a istoriei europene.",
+			"sfert_ora": "4"
 		},
 		{
-		"cale_imagine": "imagine.png",
-		"titlu": "Nume imagine",
-		"descriere": "A apărut o eroare neașteptată.",
-		"sfert_ora": "1"
+			"cale_imagine": "arta.jpg",
+			"titlu": "Arta Razboiului",
+			"descriere": "Strategii clasice pentru succes.",
+			"sfert_ora": "1"
 		},
 		{
-		"cale_imagine": "imagine1.png",
-		"titlu": "Nume imagine2",
-		"descriere": "A apărut o eroare neașteptată 2.",
-		"sfert_ora": "2"
+			"cale_imagine": "prezent.jpg",
+			"titlu": "Puterea Prezentului",
+			"descriere": "O abordare spirituala a vietii moderne.",
+			"sfert_ora": "3"
 		},
 		{
-		"cale_imagine": "imagine3.png",
-		"titlu": "Nume imagine3",
-		"descriere": "A apărut o eroare neașteptată 3.",
-		"sfert_ora": "3"
+			"cale_imagine": "scrisori.jpg",
+			"titlu": "Scrisori Catre Dumnezeu",
+			"descriere": "Reflectii spirituale.",
+			"sfert_ora": "4"
 		},
 		{
-		"cale_imagine": "imagine4.png",
-		"titlu": "Nume imagine4",
-		"descriere": "A apărut o eroare neașteptată 4.",
-		"sfert_ora": "4"
+			"cale_imagine": "ai.jpg",
+			"titlu": "Creierul si Inteligenta Artificiala",
+			"descriere": "Impactul AI asupra omenirii.",
+			"sfert_ora": "2"
 		},
 		{
-		"cale_imagine": "imagine.png",
-		"titlu": "Nume imagine",
-		"descriere": "A apărut o eroare neașteptată.",
-		"sfert_ora": "1"
+			"cale_imagine": "confesiuni.jpg",
+			"titlu": "Confesiunile unui Preot",
+			"descriere": "Marturii din spatele altarului.",
+			"sfert_ora": "3"
 		},
 		{
-		"cale_imagine": "imagine1.png",
-		"titlu": "Nume imagine2",
-		"descriere": "A apărut o eroare neașteptată 2.",
-		"sfert_ora": "2"
+			"cale_imagine": "supravietuire.jpg",
+			"titlu": "Ghid de Supravietuire",
+			"descriere": "Cum sa te descurci in situatii extreme.",
+			"sfert_ora": "1"
 		},
 		{
-		"cale_imagine": "imagine3.png",
-		"titlu": "Nume imagine3",
-		"descriere": "A apărut o eroare neașteptată 3.",
-		"sfert_ora": "3"
+			"cale_imagine": "relativitate.jpg",
+			"titlu": "Timpul si Relativitatea",
+			"descriere": "O explicatie simplificata a teoriei relativitatii.",
+			"sfert_ora": "2"
 		},
 		{
-		"cale_imagine": "imagine4.png",
-		"titlu": "Nume imagine4",
-		"descriere": "A apărut o eroare neașteptată 4.",
-		"sfert_ora": "4"
+			"cale_imagine": "zero.jpg",
+			"titlu": "De la Zero la Unu",
+			"descriere": "Despre inovatie si antreprenoriat.",
+			"sfert_ora": "4"
 		},
 		{
-		"cale_imagine": "imagine.png",
-		"titlu": "Nume imagine",
-		"descriere": "A apărut o eroare neașteptată.",
-		"sfert_ora": "1"
+			"cale_imagine": "mase.jpg",
+			"titlu": "Psihologia Maselor",
+			"descriere": "Comportamentul colectiv analizat.",
+			"sfert_ora": "1"
 		},
 		{
-		"cale_imagine": "imagine1.png",
-		"titlu": "Nume imagine2",
-		"descriere": "A apărut o eroare neașteptată 2.",
-		"sfert_ora": "2"
+			"cale_imagine": "batalia.jpg",
+			"titlu": "Batalia pentru Religie",
+			"descriere": "Un studiu asupra evolutiei credintelor.",
+			"sfert_ora": "3"
 		},
 		{
-		"cale_imagine": "imagine3.png",
-		"titlu": "Nume imagine3",
-		"descriere": "A apărut o eroare neașteptată 3.",
-		"sfert_ora": "3"
+			"cale_imagine": "genetic.jpg",
+			"titlu": "Codul Genetic",
+			"descriere": "Cum ne influenteaza ADN-ul.",
+			"sfert_ora": "2"
 		},
 		{
-		"cale_imagine": "imagine4.png",
-		"titlu": "Nume imagine4",
-		"descriere": "A apărut o eroare neașteptată 4.",
-		"sfert_ora": "4"
+			"cale_imagine": "moarte.jpg",
+			"titlu": "Viata dupa Moarte",
+			"descriere": "Explorarea lumii spirituale.",
+			"sfert_ora": "4"
 		},
 		{
-		"cale_imagine": "imagine.png",
-		"titlu": "Nume imagine",
-		"descriere": "A apărut o eroare neașteptată.",
-		"sfert_ora": "1"
+			"cale_imagine": "templari.jpg",
+			"titlu": "Misterul Templierilor",
+			"descriere": "O carte despre enigmele cavalerilor templieri.",
+			"sfert_ora": "3"
 		},
 		{
-		"cale_imagine": "imagine1.png",
-		"titlu": "Nume imagine2",
-		"descriere": "A apărut o eroare neașteptată 2.",
-		"sfert_ora": "2"
+			"cale_imagine": "gandeste.jpg",
+			"titlu": "Gandeste si devii bogat",
+			"descriere": "Un ghid despre succes si motivatie.",
+			"sfert_ora": "1"
 		},
 		{
-		"cale_imagine": "imagine3.png",
-		"titlu": "Nume imagine3",
-		"descriere": "A apărut o eroare neașteptată 3.",
-		"sfert_ora": "3"
+			"cale_imagine": "povestea.jpg",
+			"titlu": "Povestea Noastra",
+			"descriere": "O calatorie prin istoria familiei regale.",
+			"sfert_ora": "2"
 		},
 		{
-		"cale_imagine": "imagine4.png",
-		"titlu": "Nume imagine4",
-		"descriere": "A apărut o eroare neașteptată 4.",
-		"sfert_ora": "4"
+			"cale_imagine": "univers.jpg",
+			"titlu": "Secretele Universului",
+			"descriere": "O explorare a marilor mistere cosmice.",
+			"sfert_ora": "4"
 		},
 		{
-		"cale_imagine": "imagine.png",
-		"titlu": "Nume imagine",
-		"descriere": "A apărut o eroare neașteptată.",
-		"sfert_ora": "1"
+			"cale_imagine": "biblia.jpg",
+			"titlu": "Biblia Ilustrata",
+			"descriere": "O versiune ilustrata a Bibliei.",
+			"sfert_ora": "1"
 		},
 		{
-		"cale_imagine": "imagine1.png",
-		"titlu": "Nume imagine2",
-		"descriere": "A apărut o eroare neașteptată 2.",
-		"sfert_ora": "2"
+			"cale_imagine": "magia.jpg",
+			"titlu": "Magia Gandirii",
+			"descriere": "Cum sa iti imbunatatesti viata prin gandire pozitiva.",
+			"sfert_ora": "3"
 		},
 		{
-		"cale_imagine": "imagine3.png",
-		"titlu": "Nume imagine3",
-		"descriere": "A apărut o eroare neașteptată 3.",
-		"sfert_ora": "3"
+			"cale_imagine": "python.jpg",
+			"titlu": "Programare in Python",
+			"descriere": "Un ghid complet pentru incepatori.",
+			"sfert_ora": "2"
 		},
 		{
-		"cale_imagine": "imagine4.png",
-		"titlu": "Nume imagine4",
-		"descriere": "A apărut o eroare neașteptată 4.",
-		"sfert_ora": "4"
+			"cale_imagine": "europa.jpg",
+			"titlu": "Istoria Europei",
+			"descriere": "O analiza detaliata a istoriei europene.",
+			"sfert_ora": "4"
 		},
 		{
-		"cale_imagine": "imagine.png",
-		"titlu": "Nume imagine",
-		"descriere": "A apărut o eroare neașteptată.",
-		"sfert_ora": "1"
+			"cale_imagine": "arta.jpg",
+			"titlu": "Arta Razboiului",
+			"descriere": "Strategii clasice pentru succes.",
+			"sfert_ora": "1"
 		},
 		{
-		"cale_imagine": "imagine1.png",
-		"titlu": "Nume imagine2",
-		"descriere": "A apărut o eroare neașteptată 2.",
-		"sfert_ora": "2"
+			"cale_imagine": "prezent.jpg",
+			"titlu": "Puterea Prezentului",
+			"descriere": "O abordare spirituala a vietii moderne.",
+			"sfert_ora": "3"
 		},
 		{
-		"cale_imagine": "imagine3.png",
-		"titlu": "Nume imagine3",
-		"descriere": "A apărut o eroare neașteptată 3.",
-		"sfert_ora": "3"
+			"cale_imagine": "scrisori.jpg",
+			"titlu": "Scrisori Catre Dumnezeu",
+			"descriere": "Reflectii spirituale.",
+			"sfert_ora": "4"
 		},
 		{
-		"cale_imagine": "imagine4.png",
-		"titlu": "Nume imagine4",
-		"descriere": "A apărut o eroare neașteptată 4.",
-		"sfert_ora": "4"
+			"cale_imagine": "ai.jpg",
+			"titlu": "Creierul si Inteligenta Artificiala",
+			"descriere": "Impactul AI asupra omenirii.",
+			"sfert_ora": "2"
 		},
 		{
-		"cale_imagine": "imagine.png",
-		"titlu": "Nume imagine",
-		"descriere": "A apărut o eroare neașteptată.",
-		"sfert_ora": "1"
+			"cale_imagine": "confesiuni.jpg",
+			"titlu": "Confesiunile unui Preot",
+			"descriere": "Marturii din spatele altarului.",
+			"sfert_ora": "3"
 		},
 		{
-		"cale_imagine": "imagine1.png",
-		"titlu": "Nume imagine2",
-		"descriere": "A apărut o eroare neașteptată 2.",
-		"sfert_ora": "2"
+			"cale_imagine": "supravietuire.jpg",
+			"titlu": "Ghid de Supravietuire",
+			"descriere": "Cum sa te descurci in situatii extreme.",
+			"sfert_ora": "1"
 		},
 		{
-		"cale_imagine": "imagine3.png",
-		"titlu": "Nume imagine3",
-		"descriere": "A apărut o eroare neașteptată 3.",
-		"sfert_ora": "3"
+			"cale_imagine": "relativitate.jpg",
+			"titlu": "Timpul si Relativitatea",
+			"descriere": "O explicatie simplificata a teoriei relativitatii.",
+			"sfert_ora": "2"
 		},
 		{
-		"cale_imagine": "imagine4.png",
-		"titlu": "Nume imagine4",
-		"descriere": "A apărut o eroare neașteptată 4.",
-		"sfert_ora": "4"
+			"cale_imagine": "zero.jpg",
+			"titlu": "De la Zero la Unu",
+			"descriere": "Despre inovatie si antreprenoriat.",
+			"sfert_ora": "4"
 		},
 		{
-		"cale_imagine": "imagine.png",
-		"titlu": "Nume imagine",
-		"descriere": "A apărut o eroare neașteptată.",
-		"sfert_ora": "1"
+			"cale_imagine": "mase.jpg",
+			"titlu": "Psihologia Maselor",
+			"descriere": "Comportamentul colectiv analizat.",
+			"sfert_ora": "1"
 		},
 		{
-		"cale_imagine": "imagine1.png",
-		"titlu": "Nume imagine2",
-		"descriere": "A apărut o eroare neașteptată 2.",
-		"sfert_ora": "2"
+			"cale_imagine": "batalia.jpg",
+			"titlu": "Batalia pentru Religie",
+			"descriere": "Un studiu asupra evolutiei credintelor.",
+			"sfert_ora": "3"
 		},
 		{
-		"cale_imagine": "imagine3.png",
-		"titlu": "Nume imagine3",
-		"descriere": "A apărut o eroare neașteptată 3.",
-		"sfert_ora": "3"
+			"cale_imagine": "genetic.jpg",
+			"titlu": "Codul Genetic",
+			"descriere": "Cum ne influenteaza ADN-ul.",
+			"sfert_ora": "2"
 		},
 		{
-		"cale_imagine": "imagine4.png",
-		"titlu": "Nume imagine4",
-		"descriere": "A apărut o eroare neașteptată 4.",
-		"sfert_ora": "4"
+			"cale_imagine": "moarte.jpg",
+			"titlu": "Viata dupa Moarte",
+			"descriere": "Explorarea lumii spirituale.",
+			"sfert_ora": "4"
 		},
 		{
-		"cale_imagine": "imagine.png",
-		"titlu": "Nume imagine",
-		"descriere": "A apărut o eroare neașteptată.",
-		"sfert_ora": "1"
+			"cale_imagine": "templari.jpg",
+			"titlu": "Misterul Templierilor",
+			"descriere": "O carte despre enigmele cavalerilor templieri.",
+			"sfert_ora": "3"
 		},
 		{
-		"cale_imagine": "imagine1.png",
-		"titlu": "Nume imagine2",
-		"descriere": "A apărut o eroare neașteptată 2.",
-		"sfert_ora": "2"
+			"cale_imagine": "gandeste.jpg",
+			"titlu": "Gandeste si devii bogat",
+			"descriere": "Un ghid despre succes si motivatie.",
+			"sfert_ora": "1"
 		},
 		{
-		"cale_imagine": "imagine3.png",
-		"titlu": "Nume imagine3",
-		"descriere": "A apărut o eroare neașteptată 3.",
-		"sfert_ora": "3"
+			"cale_imagine": "povestea.jpg",
+			"titlu": "Povestea Noastra",
+			"descriere": "O calatorie prin istoria familiei regale.",
+			"sfert_ora": "2"
 		},
 		{
-		"cale_imagine": "imagine4.png",
-		"titlu": "Nume imagine4",
-		"descriere": "A apărut o eroare neașteptată 4.",
-		"sfert_ora": "4"
+			"cale_imagine": "univers.jpg",
+			"titlu": "Secretele Universului",
+			"descriere": "O explorare a marilor mistere cosmice.",
+			"sfert_ora": "4"
 		},
 		{
-		"cale_imagine": "imagine.png",
-		"titlu": "Nume imagine",
-		"descriere": "A apărut o eroare neașteptată.",
-		"sfert_ora": "1"
+			"cale_imagine": "biblia.jpg",
+			"titlu": "Biblia Ilustrata",
+			"descriere": "O versiune ilustrata a Bibliei.",
+			"sfert_ora": "1"
 		},
 		{
-		"cale_imagine": "imagine1.png",
-		"titlu": "Nume imagine2",
-		"descriere": "A apărut o eroare neașteptată 2.",
-		"sfert_ora": "2"
+			"cale_imagine": "magia.jpg",
+			"titlu": "Magia Gandirii",
+			"descriere": "Cum sa iti imbunatatesti viata prin gandire pozitiva.",
+			"sfert_ora": "3"
 		},
 		{
-		"cale_imagine": "imagine3.png",
-		"titlu": "Nume imagine3",
-		"descriere": "A apărut o eroare neașteptată 3.",
-		"sfert_ora": "3"
+			"cale_imagine": "python.jpg",
+			"titlu": "Programare in Python",
+			"descriere": "Un ghid complet pentru incepatori.",
+			"sfert_ora": "2"
 		},
 		{
-		"cale_imagine": "imagine4.png",
-		"titlu": "Nume imagine4",
-		"descriere": "A apărut o eroare neașteptată 4.",
-		"sfert_ora": "4"
+			"cale_imagine": "europa.jpg",
+			"titlu": "Istoria Europei",
+			"descriere": "O analiza detaliata a istoriei europene.",
+			"sfert_ora": "4"
 		},
 		{
-		"cale_imagine": "imagine.png",
-		"titlu": "Nume imagine",
-		"descriere": "A apărut o eroare neașteptată.",
-		"sfert_ora": "1"
+			"cale_imagine": "arta.jpg",
+			"titlu": "Arta Razboiului",
+			"descriere": "Strategii clasice pentru succes.",
+			"sfert_ora": "1"
 		},
 		{
-		"cale_imagine": "imagine1.png",
-		"titlu": "Nume imagine2",
-		"descriere": "A apărut o eroare neașteptată 2.",
-		"sfert_ora": "2"
+			"cale_imagine": "prezent.jpg",
+			"titlu": "Puterea Prezentului",
+			"descriere": "O abordare spirituala a vietii moderne.",
+			"sfert_ora": "3"
 		},
 		{
-		"cale_imagine": "imagine3.png",
-		"titlu": "Nume imagine3",
-		"descriere": "A apărut o eroare neașteptată 3.",
-		"sfert_ora": "3"
+			"cale_imagine": "scrisori.jpg",
+			"titlu": "Scrisori Catre Dumnezeu",
+			"descriere": "Reflectii spirituale.",
+			"sfert_ora": "4"
 		},
 		{
-		"cale_imagine": "imagine4.png",
-		"titlu": "Nume imagine4",
-		"descriere": "A apărut o eroare neașteptată 4.",
-		"sfert_ora": "4"
+			"cale_imagine": "ai.jpg",
+			"titlu": "Creierul si Inteligenta Artificiala",
+			"descriere": "Impactul AI asupra omenirii.",
+			"sfert_ora": "2"
 		},
 		{
-		"cale_imagine": "imagine.png",
-		"titlu": "Nume imagine",
-		"descriere": "A apărut o eroare neașteptată.",
-		"sfert_ora": "1"
+			"cale_imagine": "confesiuni.jpg",
+			"titlu": "Confesiunile unui Preot",
+			"descriere": "Marturii din spatele altarului.",
+			"sfert_ora": "3"
 		},
 		{
-		"cale_imagine": "imagine1.png",
-		"titlu": "Nume imagine2",
-		"descriere": "A apărut o eroare neașteptată 2.",
-		"sfert_ora": "2"
+			"cale_imagine": "supravietuire.jpg",
+			"titlu": "Ghid de Supravietuire",
+			"descriere": "Cum sa te descurci in situatii extreme.",
+			"sfert_ora": "1"
 		},
 		{
-		"cale_imagine": "imagine3.png",
-		"titlu": "Nume imagine3",
-		"descriere": "A apărut o eroare neașteptată 3.",
-		"sfert_ora": "3"
+			"cale_imagine": "relativitate.jpg",
+			"titlu": "Timpul si Relativitatea",
+			"descriere": "O explicatie simplificata a teoriei relativitatii.",
+			"sfert_ora": "2"
 		},
 		{
-		"cale_imagine": "imagine4.png",
-		"titlu": "Nume imagine4",
-		"descriere": "A apărut o eroare neașteptată 4.",
-		"sfert_ora": "4"
+			"cale_imagine": "zero.jpg",
+			"titlu": "De la Zero la Unu",
+			"descriere": "Despre inovatie si antreprenoriat.",
+			"sfert_ora": "4"
 		},
 		{
-		"cale_imagine": "imagine.png",
-		"titlu": "Nume imagine",
-		"descriere": "A apărut o eroare neașteptată.",
-		"sfert_ora": "1"
+			"cale_imagine": "mase.jpg",
+			"titlu": "Psihologia Maselor",
+			"descriere": "Comportamentul colectiv analizat.",
+			"sfert_ora": "1"
 		},
 		{
-		"cale_imagine": "imagine1.png",
-		"titlu": "Nume imagine2",
-		"descriere": "A apărut o eroare neașteptată 2.",
-		"sfert_ora": "2"
+			"cale_imagine": "batalia.jpg",
+			"titlu": "Batalia pentru Religie",
+			"descriere": "Un studiu asupra evolutiei credintelor.",
+			"sfert_ora": "3"
 		},
 		{
-		"cale_imagine": "imagine3.png",
-		"titlu": "Nume imagine3",
-		"descriere": "A apărut o eroare neașteptată 3.",
-		"sfert_ora": "3"
+			"cale_imagine": "genetic.jpg",
+			"titlu": "Codul Genetic",
+			"descriere": "Cum ne influenteaza ADN-ul.",
+			"sfert_ora": "2"
 		},
 		{
-		"cale_imagine": "imagine4.png",
-		"titlu": "Nume imagine4",
-		"descriere": "A apărut o eroare neașteptată 4.",
-		"sfert_ora": "4"
+			"cale_imagine": "moarte.jpg",
+			"titlu": "Viata dupa Moarte",
+			"descriere": "Explorarea lumii spirituale.",
+			"sfert_ora": "4"
 		},
 		{
-		"cale_imagine": "imagine.png",
-		"titlu": "Nume imagine",
-		"descriere": "A apărut o eroare neașteptată.",
-		"sfert_ora": "1"
+			"cale_imagine": "templari.jpg",
+			"titlu": "Misterul Templierilor",
+			"descriere": "O carte despre enigmele cavalerilor templieri.",
+			"sfert_ora": "3"
 		},
 		{
-		"cale_imagine": "imagine1.png",
-		"titlu": "Nume imagine2",
-		"descriere": "A apărut o eroare neașteptată 2.",
-		"sfert_ora": "2"
+			"cale_imagine": "gandeste.jpg",
+			"titlu": "Gandeste si devii bogat",
+			"descriere": "Un ghid despre succes si motivatie.",
+			"sfert_ora": "1"
 		},
 		{
-		"cale_imagine": "imagine3.png",
-		"titlu": "Nume imagine3",
-		"descriere": "A apărut o eroare neașteptată 3.",
-		"sfert_ora": "3"
+			"cale_imagine": "povestea.jpg",
+			"titlu": "Povestea Noastra",
+			"descriere": "O calatorie prin istoria familiei regale.",
+			"sfert_ora": "2"
 		},
 		{
-		"cale_imagine": "imagine4.png",
-		"titlu": "Nume imagine4",
-		"descriere": "A apărut o eroare neașteptată 4.",
-		"sfert_ora": "4"
+			"cale_imagine": "univers.jpg",
+			"titlu": "Secretele Universului",
+			"descriere": "O explorare a marilor mistere cosmice.",
+			"sfert_ora": "4"
 		},
 		{
-		"cale_imagine": "imagine.png",
-		"titlu": "Nume imagine",
-		"descriere": "A apărut o eroare neașteptată.",
-		"sfert_ora": "1"
+			"cale_imagine": "biblia.jpg",
+			"titlu": "Biblia Ilustrata",
+			"descriere": "O versiune ilustrata a Bibliei.",
+			"sfert_ora": "1"
 		},
 		{
-		"cale_imagine": "imagine1.png",
-		"titlu": "Nume imagine2",
-		"descriere": "A apărut o eroare neașteptată 2.",
-		"sfert_ora": "2"
+			"cale_imagine": "magia.jpg",
+			"titlu": "Magia Gandirii",
+			"descriere": "Cum sa iti imbunatatesti viata prin gandire pozitiva.",
+			"sfert_ora": "3"
 		},
 		{
-		"cale_imagine": "imagine3.png",
-		"titlu": "Nume imagine3",
-		"descriere": "A apărut o eroare neașteptată 3.",
-		"sfert_ora": "3"
+			"cale_imagine": "python.jpg",
+			"titlu": "Programare in Python",
+			"descriere": "Un ghid complet pentru incepatori.",
+			"sfert_ora": "2"
 		},
 		{
-		"cale_imagine": "imagine4.png",
-		"titlu": "Nume imagine4",
-		"descriere": "A apărut o eroare neașteptată 4.",
-		"sfert_ora": "4"
+			"cale_imagine": "europa.jpg",
+			"titlu": "Istoria Europei",
+			"descriere": "O analiza detaliata a istoriei europene.",
+			"sfert_ora": "4"
 		},
 		{
-		"cale_imagine": "imagine.png",
-		"titlu": "Nume imagine",
-		"descriere": "A apărut o eroare neașteptată.",
-		"sfert_ora": "1"
+			"cale_imagine": "arta.jpg",
+			"titlu": "Arta Razboiului",
+			"descriere": "Strategii clasice pentru succes.",
+			"sfert_ora": "1"
 		},
 		{
-		"cale_imagine": "imagine1.png",
-		"titlu": "Nume imagine2",
-		"descriere": "A apărut o eroare neașteptată 2.",
-		"sfert_ora": "2"
+			"cale_imagine": "prezent.jpg",
+			"titlu": "Puterea Prezentului",
+			"descriere": "O abordare spirituala a vietii moderne.",
+			"sfert_ora": "3"
 		},
 		{
-		"cale_imagine": "imagine3.png",
-		"titlu": "Nume imagine3",
-		"descriere": "A apărut o eroare neașteptată 3.",
-		"sfert_ora": "3"
+			"cale_imagine": "scrisori.jpg",
+			"titlu": "Scrisori Catre Dumnezeu",
+			"descriere": "Reflectii spirituale.",
+			"sfert_ora": "4"
 		},
 		{
-		"cale_imagine": "imagine4.png",
-		"titlu": "Nume imagine4",
-		"descriere": "A apărut o eroare neașteptată 4.",
-		"sfert_ora": "4"
+			"cale_imagine": "ai.jpg",
+			"titlu": "Creierul si Inteligenta Artificiala",
+			"descriere": "Impactul AI asupra omenirii.",
+			"sfert_ora": "2"
 		},
 		{
-		"cale_imagine": "imagine.png",
-		"titlu": "Nume imagine",
-		"descriere": "A apărut o eroare neașteptată.",
-		"sfert_ora": "1"
+			"cale_imagine": "confesiuni.jpg",
+			"titlu": "Confesiunile unui Preot",
+			"descriere": "Marturii din spatele altarului.",
+			"sfert_ora": "3"
 		},
 		{
-		"cale_imagine": "imagine1.png",
-		"titlu": "Nume imagine2",
-		"descriere": "A apărut o eroare neașteptată 2.",
-		"sfert_ora": "2"
+			"cale_imagine": "supravietuire.jpg",
+			"titlu": "Ghid de Supravietuire",
+			"descriere": "Cum sa te descurci in situatii extreme.",
+			"sfert_ora": "1"
 		},
 		{
-		"cale_imagine": "imagine3.png",
-		"titlu": "Nume imagine3",
-		"descriere": "A apărut o eroare neașteptată 3.",
-		"sfert_ora": "3"
+			"cale_imagine": "relativitate.jpg",
+			"titlu": "Timpul si Relativitatea",
+			"descriere": "O explicatie simplificata a teoriei relativitatii.",
+			"sfert_ora": "2"
 		},
 		{
-		"cale_imagine": "imagine4.png",
-		"titlu": "Nume imagine4",
-		"descriere": "A apărut o eroare neașteptată 4.",
-		"sfert_ora": "4"
+			"cale_imagine": "zero.jpg",
+			"titlu": "De la Zero la Unu",
+			"descriere": "Despre inovatie si antreprenoriat.",
+			"sfert_ora": "4"
 		},
 		{
-		"cale_imagine": "imagine.png",
-		"titlu": "Nume imagine",
-		"descriere": "A apărut o eroare neașteptată.",
-		"sfert_ora": "1"
+			"cale_imagine": "mase.jpg",
+			"titlu": "Psihologia Maselor",
+			"descriere": "Comportamentul colectiv analizat.",
+			"sfert_ora": "1"
 		},
 		{
-		"cale_imagine": "imagine1.png",
-		"titlu": "Nume imagine2",
-		"descriere": "A apărut o eroare neașteptată 2.",
-		"sfert_ora": "2"
+			"cale_imagine": "batalia.jpg",
+			"titlu": "Batalia pentru Religie",
+			"descriere": "Un studiu asupra evolutiei credintelor.",
+			"sfert_ora": "3"
 		},
 		{
-		"cale_imagine": "imagine3.png",
-		"titlu": "Nume imagine3",
-		"descriere": "A apărut o eroare neașteptată 3.",
-		"sfert_ora": "3"
+			"cale_imagine": "genetic.jpg",
+			"titlu": "Codul Genetic",
+			"descriere": "Cum ne influenteaza ADN-ul.",
+			"sfert_ora": "2"
 		},
 		{
-		"cale_imagine": "imagine4.png",
-		"titlu": "Nume imagine4",
-		"descriere": "A apărut o eroare neașteptată 4.",
-		"sfert_ora": "4"
+			"cale_imagine": "moarte.jpg",
+			"titlu": "Viata dupa Moarte",
+			"descriere": "Explorarea lumii spirituale.",
+			"sfert_ora": "4"
 		},
 		{
-		"cale_imagine": "imagine.png",
-		"titlu": "Nume imagine",
-		"descriere": "A apărut o eroare neașteptată.",
-		"sfert_ora": "1"
+			"cale_imagine": "templari.jpg",
+			"titlu": "Misterul Templierilor",
+			"descriere": "O carte despre enigmele cavalerilor templieri.",
+			"sfert_ora": "3"
 		},
 		{
-		"cale_imagine": "imagine1.png",
-		"titlu": "Nume imagine2",
-		"descriere": "A apărut o eroare neașteptată 2.",
-		"sfert_ora": "2"
+			"cale_imagine": "gandeste.jpg",
+			"titlu": "Gandeste si devii bogat",
+			"descriere": "Un ghid despre succes si motivatie.",
+			"sfert_ora": "1"
 		},
 		{
-		"cale_imagine": "imagine3.png",
-		"titlu": "Nume imagine3",
-		"descriere": "A apărut o eroare neașteptată 3.",
-		"sfert_ora": "3"
+			"cale_imagine": "povestea.jpg",
+			"titlu": "Povestea Noastra",
+			"descriere": "O calatorie prin istoria familiei regale.",
+			"sfert_ora": "2"
 		},
 		{
-		"cale_imagine": "imagine4.png",
-		"titlu": "Nume imagine4",
-		"descriere": "A apărut o eroare neașteptată 4.",
-		"sfert_ora": "4"
+			"cale_imagine": "univers.jpg",
+			"titlu": "Secretele Universului",
+			"descriere": "O explorare a marilor mistere cosmice.",
+			"sfert_ora": "4"
 		},
 		{
-		"cale_imagine": "imagine.png",
-		"titlu": "Nume imagine",
-		"descriere": "A apărut o eroare neașteptată.",
-		"sfert_ora": "1"
+			"cale_imagine": "biblia.jpg",
+			"titlu": "Biblia Ilustrata",
+			"descriere": "O versiune ilustrata a Bibliei.",
+			"sfert_ora": "1"
 		},
 		{
-		"cale_imagine": "imagine1.png",
-		"titlu": "Nume imagine2",
-		"descriere": "A apărut o eroare neașteptată 2.",
-		"sfert_ora": "2"
+			"cale_imagine": "magia.jpg",
+			"titlu": "Magia Gandirii",
+			"descriere": "Cum sa iti imbunatatesti viata prin gandire pozitiva.",
+			"sfert_ora": "3"
 		},
 		{
-		"cale_imagine": "imagine3.png",
-		"titlu": "Nume imagine3",
-		"descriere": "A apărut o eroare neașteptată 3.",
-		"sfert_ora": "3"
+			"cale_imagine": "python.jpg",
+			"titlu": "Programare in Python",
+			"descriere": "Un ghid complet pentru incepatori.",
+			"sfert_ora": "2"
 		},
 		{
-		"cale_imagine": "imagine4.png",
-		"titlu": "Nume imagine4",
-		"descriere": "A apărut o eroare neașteptată 4.",
-		"sfert_ora": "4"
+			"cale_imagine": "europa.jpg",
+			"titlu": "Istoria Europei",
+			"descriere": "O analiza detaliata a istoriei europene.",
+			"sfert_ora": "4"
+		},
+		{
+			"cale_imagine": "arta.jpg",
+			"titlu": "Arta Razboiului",
+			"descriere": "Strategii clasice pentru succes.",
+			"sfert_ora": "1"
+		},
+		{
+			"cale_imagine": "prezent.jpg",
+			"titlu": "Puterea Prezentului",
+			"descriere": "O abordare spirituala a vietii moderne.",
+			"sfert_ora": "3"
+		},
+		{
+			"cale_imagine": "scrisori.jpg",
+			"titlu": "Scrisori Catre Dumnezeu",
+			"descriere": "Reflectii spirituale.",
+			"sfert_ora": "4"
+		},
+		{
+			"cale_imagine": "ai.jpg",
+			"titlu": "Creierul si Inteligenta Artificiala",
+			"descriere": "Impactul AI asupra omenirii.",
+			"sfert_ora": "2"
+		},
+		{
+			"cale_imagine": "confesiuni.jpg",
+			"titlu": "Confesiunile unui Preot",
+			"descriere": "Marturii din spatele altarului.",
+			"sfert_ora": "3"
+		},
+		{
+			"cale_imagine": "supravietuire.jpg",
+			"titlu": "Ghid de Supravietuire",
+			"descriere": "Cum sa te descurci in situatii extreme.",
+			"sfert_ora": "1"
+		},
+		{
+			"cale_imagine": "relativitate.jpg",
+			"titlu": "Timpul si Relativitatea",
+			"descriere": "O explicatie simplificata a teoriei relativitatii.",
+			"sfert_ora": "2"
+		},
+		{
+			"cale_imagine": "zero.jpg",
+			"titlu": "De la Zero la Unu",
+			"descriere": "Despre inovatie si antreprenoriat.",
+			"sfert_ora": "4"
+		},
+		{
+			"cale_imagine": "mase.jpg",
+			"titlu": "Psihologia Maselor",
+			"descriere": "Comportamentul colectiv analizat.",
+			"sfert_ora": "1"
+		},
+		{
+			"cale_imagine": "batalia.jpg",
+			"titlu": "Batalia pentru Religie",
+			"descriere": "Un studiu asupra evolutiei credintelor.",
+			"sfert_ora": "3"
+		},
+		{
+			"cale_imagine": "genetic.jpg",
+			"titlu": "Codul Genetic",
+			"descriere": "Cum ne influenteaza ADN-ul.",
+			"sfert_ora": "2"
+		},
+		{
+			"cale_imagine": "moarte.jpg",
+			"titlu": "Viata dupa Moarte",
+			"descriere": "Explorarea lumii spirituale.",
+			"sfert_ora": "4"
+		},
+		{
+			"cale_imagine": "templari.jpg",
+			"titlu": "Misterul Templierilor",
+			"descriere": "O carte despre enigmele cavalerilor templieri.",
+			"sfert_ora": "3"
+		},
+		{
+			"cale_imagine": "gandeste.jpg",
+			"titlu": "Gandeste si devii bogat",
+			"descriere": "Un ghid despre succes si motivatie.",
+			"sfert_ora": "1"
+		},
+		{
+			"cale_imagine": "povestea.jpg",
+			"titlu": "Povestea Noastra",
+			"descriere": "O calatorie prin istoria familiei regale.",
+			"sfert_ora": "2"
+		},
+		{
+			"cale_imagine": "univers.jpg",
+			"titlu": "Secretele Universului",
+			"descriere": "O explorare a marilor mistere cosmice.",
+			"sfert_ora": "4"
+		},
+		{
+			"cale_imagine": "biblia.jpg",
+			"titlu": "Biblia Ilustrata",
+			"descriere": "O versiune ilustrata a Bibliei.",
+			"sfert_ora": "1"
+		},
+		{
+			"cale_imagine": "magia.jpg",
+			"titlu": "Magia Gandirii",
+			"descriere": "Cum sa iti imbunatatesti viata prin gandire pozitiva.",
+			"sfert_ora": "3"
+		},
+		{
+			"cale_imagine": "python.jpg",
+			"titlu": "Programare in Python",
+			"descriere": "Un ghid complet pentru incepatori.",
+			"sfert_ora": "2"
+		},
+		{
+			"cale_imagine": "europa.jpg",
+			"titlu": "Istoria Europei",
+			"descriere": "O analiza detaliata a istoriei europene.",
+			"sfert_ora": "4"
+		},
+		{
+			"cale_imagine": "arta.jpg",
+			"titlu": "Arta Razboiului",
+			"descriere": "Strategii clasice pentru succes.",
+			"sfert_ora": "1"
+		},
+		{
+			"cale_imagine": "prezent.jpg",
+			"titlu": "Puterea Prezentului",
+			"descriere": "O abordare spirituala a vietii moderne.",
+			"sfert_ora": "3"
+		},
+		{
+			"cale_imagine": "scrisori.jpg",
+			"titlu": "Scrisori Catre Dumnezeu",
+			"descriere": "Reflectii spirituale.",
+			"sfert_ora": "4"
+		},
+		{
+			"cale_imagine": "ai.jpg",
+			"titlu": "Creierul si Inteligenta Artificiala",
+			"descriere": "Impactul AI asupra omenirii.",
+			"sfert_ora": "2"
+		},
+		{
+			"cale_imagine": "confesiuni.jpg",
+			"titlu": "Confesiunile unui Preot",
+			"descriere": "Marturii din spatele altarului.",
+			"sfert_ora": "3"
+		},
+		{
+			"cale_imagine": "supravietuire.jpg",
+			"titlu": "Ghid de Supravietuire",
+			"descriere": "Cum sa te descurci in situatii extreme.",
+			"sfert_ora": "1"
+		},
+		{
+			"cale_imagine": "relativitate.jpg",
+			"titlu": "Timpul si Relativitatea",
+			"descriere": "O explicatie simplificata a teoriei relativitatii.",
+			"sfert_ora": "2"
+		},
+		{
+			"cale_imagine": "zero.jpg",
+			"titlu": "De la Zero la Unu",
+			"descriere": "Despre inovatie si antreprenoriat.",
+			"sfert_ora": "4"
+		},
+		{
+			"cale_imagine": "mase.jpg",
+			"titlu": "Psihologia Maselor",
+			"descriere": "Comportamentul colectiv analizat.",
+			"sfert_ora": "1"
+		},
+		{
+			"cale_imagine": "batalia.jpg",
+			"titlu": "Batalia pentru Religie",
+			"descriere": "Un studiu asupra evolutiei credintelor.",
+			"sfert_ora": "3"
+		},
+		{
+			"cale_imagine": "genetic.jpg",
+			"titlu": "Codul Genetic",
+			"descriere": "Cum ne influenteaza ADN-ul.",
+			"sfert_ora": "2"
+		},
+		{
+			"cale_imagine": "moarte.jpg",
+			"titlu": "Viata dupa Moarte",
+			"descriere": "Explorarea lumii spirituale.",
+			"sfert_ora": "4"
+		},
+		{
+			"cale_imagine": "templari.jpg",
+			"titlu": "Misterul Templierilor",
+			"descriere": "O carte despre enigmele cavalerilor templieri.",
+			"sfert_ora": "3"
+		},
+		{
+			"cale_imagine": "gandeste.jpg",
+			"titlu": "Gandeste si devii bogat",
+			"descriere": "Un ghid despre succes si motivatie.",
+			"sfert_ora": "1"
+		},
+		{
+			"cale_imagine": "povestea.jpg",
+			"titlu": "Povestea Noastra",
+			"descriere": "O calatorie prin istoria familiei regale.",
+			"sfert_ora": "2"
+		},
+		{
+			"cale_imagine": "univers.jpg",
+			"titlu": "Secretele Universului",
+			"descriere": "O explorare a marilor mistere cosmice.",
+			"sfert_ora": "4"
+		},
+		{
+			"cale_imagine": "biblia.jpg",
+			"titlu": "Biblia Ilustrata",
+			"descriere": "O versiune ilustrata a Bibliei.",
+			"sfert_ora": "1"
+		},
+		{
+			"cale_imagine": "magia.jpg",
+			"titlu": "Magia Gandirii",
+			"descriere": "Cum sa iti imbunatatesti viata prin gandire pozitiva.",
+			"sfert_ora": "3"
+		},
+		{
+			"cale_imagine": "python.jpg",
+			"titlu": "Programare in Python",
+			"descriere": "Un ghid complet pentru incepatori.",
+			"sfert_ora": "2"
+		},
+		{
+			"cale_imagine": "europa.jpg",
+			"titlu": "Istoria Europei",
+			"descriere": "O analiza detaliata a istoriei europene.",
+			"sfert_ora": "4"
+		},
+		{
+			"cale_imagine": "arta.jpg",
+			"titlu": "Arta Razboiului",
+			"descriere": "Strategii clasice pentru succes.",
+			"sfert_ora": "1"
+		},
+		{
+			"cale_imagine": "prezent.jpg",
+			"titlu": "Puterea Prezentului",
+			"descriere": "O abordare spirituala a vietii moderne.",
+			"sfert_ora": "3"
+		},
+		{
+			"cale_imagine": "scrisori.jpg",
+			"titlu": "Scrisori Catre Dumnezeu",
+			"descriere": "Reflectii spirituale.",
+			"sfert_ora": "4"
+		},
+		{
+			"cale_imagine": "ai.jpg",
+			"titlu": "Creierul si Inteligenta Artificiala",
+			"descriere": "Impactul AI asupra omenirii.",
+			"sfert_ora": "2"
+		},
+		{
+			"cale_imagine": "confesiuni.jpg",
+			"titlu": "Confesiunile unui Preot",
+			"descriere": "Marturii din spatele altarului.",
+			"sfert_ora": "3"
+		},
+		{
+			"cale_imagine": "supravietuire.jpg",
+			"titlu": "Ghid de Supravietuire",
+			"descriere": "Cum sa te descurci in situatii extreme.",
+			"sfert_ora": "1"
+		},
+		{
+			"cale_imagine": "relativitate.jpg",
+			"titlu": "Timpul si Relativitatea",
+			"descriere": "O explicatie simplificata a teoriei relativitatii.",
+			"sfert_ora": "2"
+		},
+		{
+			"cale_imagine": "zero.jpg",
+			"titlu": "De la Zero la Unu",
+			"descriere": "Despre inovatie si antreprenoriat.",
+			"sfert_ora": "4"
+		},
+		{
+			"cale_imagine": "mase.jpg",
+			"titlu": "Psihologia Maselor",
+			"descriere": "Comportamentul colectiv analizat.",
+			"sfert_ora": "1"
+		},
+		{
+			"cale_imagine": "batalia.jpg",
+			"titlu": "Batalia pentru Religie",
+			"descriere": "Un studiu asupra evolutiei credintelor.",
+			"sfert_ora": "3"
+		},
+		{
+			"cale_imagine": "genetic.jpg",
+			"titlu": "Codul Genetic",
+			"descriere": "Cum ne influenteaza ADN-ul.",
+			"sfert_ora": "2"
+		},
+		{
+			"cale_imagine": "moarte.jpg",
+			"titlu": "Viata dupa Moarte",
+			"descriere": "Explorarea lumii spirituale.",
+			"sfert_ora": "4"
+		},{
+			"cale_imagine": "templari.jpg",
+			"titlu": "Misterul Templierilor",
+			"descriere": "O carte despre enigmele cavalerilor templieri.",
+			"sfert_ora": "3"
+		},
+		{
+			"cale_imagine": "gandeste.jpg",
+			"titlu": "Gandeste si devii bogat",
+			"descriere": "Un ghid despre succes si motivatie.",
+			"sfert_ora": "1"
+		},
+		{
+			"cale_imagine": "povestea.jpg",
+			"titlu": "Povestea Noastra",
+			"descriere": "O calatorie prin istoria familiei regale.",
+			"sfert_ora": "2"
+		},
+		{
+			"cale_imagine": "univers.jpg",
+			"titlu": "Secretele Universului",
+			"descriere": "O explorare a marilor mistere cosmice.",
+			"sfert_ora": "4"
+		},
+		{
+			"cale_imagine": "biblia.jpg",
+			"titlu": "Biblia Ilustrata",
+			"descriere": "O versiune ilustrata a Bibliei.",
+			"sfert_ora": "1"
+		},
+		{
+			"cale_imagine": "magia.jpg",
+			"titlu": "Magia Gandirii",
+			"descriere": "Cum sa iti imbunatatesti viata prin gandire pozitiva.",
+			"sfert_ora": "3"
+		},
+		{
+			"cale_imagine": "python.jpg",
+			"titlu": "Programare in Python",
+			"descriere": "Un ghid complet pentru incepatori.",
+			"sfert_ora": "2"
+		},
+		{
+			"cale_imagine": "europa.jpg",
+			"titlu": "Istoria Europei",
+			"descriere": "O analiza detaliata a istoriei europene.",
+			"sfert_ora": "4"
+		},
+		{
+			"cale_imagine": "arta.jpg",
+			"titlu": "Arta Razboiului",
+			"descriere": "Strategii clasice pentru succes.",
+			"sfert_ora": "1"
+		},
+		{
+			"cale_imagine": "prezent.jpg",
+			"titlu": "Puterea Prezentului",
+			"descriere": "O abordare spirituala a vietii moderne.",
+			"sfert_ora": "3"
+		},
+		{
+			"cale_imagine": "scrisori.jpg",
+			"titlu": "Scrisori Catre Dumnezeu",
+			"descriere": "Reflectii spirituale.",
+			"sfert_ora": "4"
+		},
+		{
+			"cale_imagine": "ai.jpg",
+			"titlu": "Creierul si Inteligenta Artificiala",
+			"descriere": "Impactul AI asupra omenirii.",
+			"sfert_ora": "2"
+		},
+		{
+			"cale_imagine": "confesiuni.jpg",
+			"titlu": "Confesiunile unui Preot",
+			"descriere": "Marturii din spatele altarului.",
+			"sfert_ora": "3"
+		},
+		{
+			"cale_imagine": "supravietuire.jpg",
+			"titlu": "Ghid de Supravietuire",
+			"descriere": "Cum sa te descurci in situatii extreme.",
+			"sfert_ora": "1"
+		},
+		{
+			"cale_imagine": "relativitate.jpg",
+			"titlu": "Timpul si Relativitatea",
+			"descriere": "O explicatie simplificata a teoriei relativitatii.",
+			"sfert_ora": "2"
+		},
+		{
+			"cale_imagine": "zero.jpg",
+			"titlu": "De la Zero la Unu",
+			"descriere": "Despre inovatie si antreprenoriat.",
+			"sfert_ora": "4"
+		},
+		{
+			"cale_imagine": "mase.jpg",
+			"titlu": "Psihologia Maselor",
+			"descriere": "Comportamentul colectiv analizat.",
+			"sfert_ora": "1"
+		},
+		{
+			"cale_imagine": "batalia.jpg",
+			"titlu": "Batalia pentru Religie",
+			"descriere": "Un studiu asupra evolutiei credintelor.",
+			"sfert_ora": "3"
+		},
+		{
+			"cale_imagine": "genetic.jpg",
+			"titlu": "Codul Genetic",
+			"descriere": "Cum ne influenteaza ADN-ul.",
+			"sfert_ora": "2"
+		},
+		{
+			"cale_imagine": "moarte.jpg",
+			"titlu": "Viata dupa Moarte",
+			"descriere": "Explorarea lumii spirituale.",
+			"sfert_ora": "4"
 		}
-	]
-  }
+		,{
+			"cale_imagine": "templari.jpg",
+			"titlu": "Misterul Templierilor",
+			"descriere": "O carte despre enigmele cavalerilor templieri.",
+			"sfert_ora": "3"
+		},
+		{
+			"cale_imagine": "gandeste.jpg",
+			"titlu": "Gandeste si devii bogat",
+			"descriere": "Un ghid despre succes si motivatie.",
+			"sfert_ora": "1"
+		},
+		{
+			"cale_imagine": "povestea.jpg",
+			"titlu": "Povestea Noastra",
+			"descriere": "O calatorie prin istoria familiei regale.",
+			"sfert_ora": "2"
+		},
+		{
+			"cale_imagine": "univers.jpg",
+			"titlu": "Secretele Universului",
+			"descriere": "O explorare a marilor mistere cosmice.",
+			"sfert_ora": "4"
+		},
+		{
+			"cale_imagine": "biblia.jpg",
+			"titlu": "Biblia Ilustrata",
+			"descriere": "O versiune ilustrata a Bibliei.",
+			"sfert_ora": "1"
+		},
+		{
+			"cale_imagine": "magia.jpg",
+			"titlu": "Magia Gandirii",
+			"descriere": "Cum sa iti imbunatatesti viata prin gandire pozitiva.",
+			"sfert_ora": "3"
+		},
+		{
+			"cale_imagine": "python.jpg",
+			"titlu": "Programare in Python",
+			"descriere": "Un ghid complet pentru incepatori.",
+			"sfert_ora": "2"
+		},
+		{
+			"cale_imagine": "europa.jpg",
+			"titlu": "Istoria Europei",
+			"descriere": "O analiza detaliata a istoriei europene.",
+			"sfert_ora": "4"
+		},
+		{
+			"cale_imagine": "arta.jpg",
+			"titlu": "Arta Razboiului",
+			"descriere": "Strategii clasice pentru succes.",
+			"sfert_ora": "1"
+		},
+		{
+			"cale_imagine": "prezent.jpg",
+			"titlu": "Puterea Prezentului",
+			"descriere": "O abordare spirituala a vietii moderne.",
+			"sfert_ora": "3"
+		},
+		{
+			"cale_imagine": "scrisori.jpg",
+			"titlu": "Scrisori Catre Dumnezeu",
+			"descriere": "Reflectii spirituale.",
+			"sfert_ora": "4"
+		},
+		{
+			"cale_imagine": "ai.jpg",
+			"titlu": "Creierul si Inteligenta Artificiala",
+			"descriere": "Impactul AI asupra omenirii.",
+			"sfert_ora": "2"
+		},
+		{
+			"cale_imagine": "confesiuni.jpg",
+			"titlu": "Confesiunile unui Preot",
+			"descriere": "Marturii din spatele altarului.",
+			"sfert_ora": "3"
+		},
+		{
+			"cale_imagine": "supravietuire.jpg",
+			"titlu": "Ghid de Supravietuire",
+			"descriere": "Cum sa te descurci in situatii extreme.",
+			"sfert_ora": "1"
+		},
+		{
+			"cale_imagine": "relativitate.jpg",
+			"titlu": "Timpul si Relativitatea",
+			"descriere": "O explicatie simplificata a teoriei relativitatii.",
+			"sfert_ora": "2"
+		},
+		{
+			"cale_imagine": "zero.jpg",
+			"titlu": "De la Zero la Unu",
+			"descriere": "Despre inovatie si antreprenoriat.",
+			"sfert_ora": "4"
+		},
+		{
+			"cale_imagine": "mase.jpg",
+			"titlu": "Psihologia Maselor",
+			"descriere": "Comportamentul colectiv analizat.",
+			"sfert_ora": "1"
+		},
+		{
+			"cale_imagine": "batalia.jpg",
+			"titlu": "Batalia pentru Religie",
+			"descriere": "Un studiu asupra evolutiei credintelor.",
+			"sfert_ora": "3"
+		},
+		{
+			"cale_imagine": "genetic.jpg",
+			"titlu": "Codul Genetic",
+			"descriere": "Cum ne influenteaza ADN-ul.",
+			"sfert_ora": "2"
+		},
+		{
+			"cale_imagine": "moarte.jpg",
+			"titlu": "Viata dupa Moarte",
+			"descriere": "Explorarea lumii spirituale.",
+			"sfert_ora": "4"
+		}
+	]	
+}
   

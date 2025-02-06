@@ -4,13 +4,30 @@ const resizeImage = require('./resizeImages');
 const fs = require('fs');
 const path = require('path');
 const sass = require('sass'); // Adăugăm pachetul sass
+const pg = require('pg');
 const app = express();
 
 const vect_foldere = ["temp", "backup"]; // Adăugăm folderul backup
 
+const Client=pg.Client;
+
+const client = new Client({
+    database:"proiect",
+    user:"admindio",
+    password:"admin",
+    host:"localhost",
+    port:5432
+});
+var categoriEnum = [];
+client.connect();
+client.query("SELECT unnest(enum_range(NULL::genuri_carte)) AS categorie;", function(err,rezultat){
+	categoriEnum = rezultat.rows.map( row => row.categorie );
+	console.log(categoriEnum); 
+});
+
 vect_foldere.forEach((folder) => {
     const folderPath = path.join(__dirname, folder);
-
+ 
     if(!fs.existsSync(folderPath)){
       fs.mkdirSync(folderPath, {recursive: true});
       console.log(`Folderul "${folder}" a fost creat la: ${folderPath} `);
@@ -48,17 +65,19 @@ function initErori() {
     });
 }
 
-function afisareEroare(res, identificator, titlu, text, imagine) {
+function afisareEroare(res, identificator, titlu, text, imagine, descriere) {
     const eroare = obGlobal.obErori.info_erori.find(er => er.identificator === identificator) || obGlobal.obErori.eroare_default;
 
     titlu = titlu || eroare.titlu;
     text = text || eroare.text;
     imagine = imagine || eroare.imagine;
+	descriere = descriere || eroare.descriere;
 
     res.status(identificator).render('pagini/eroare', {
         titlu: titlu,
         text: text,
-        imagine: imagine
+        imagine: imagine,
+		descriere: descriere
     });
 }
 
@@ -83,7 +102,7 @@ app.get('/favicon.ico', (req, res) => {
 
 app.use('/resurse/', express.static('resurse'));
 
-app.use('/resurse*', (req, res, next) => {
+app.use('/resurse/*', (req, res, next) => {
     const resourcePath = path.join(__dirname, 'public', req.path);
     if (!fs.existsSync(resourcePath) || fs.lstatSync(resourcePath).isDirectory()) {
         afisareEroare(res, 403);
@@ -137,6 +156,9 @@ fs.watch(obGlobal.folderScss, (eventType, filename) => {
 
 app.get(['/', '/index', '/home'], (req, res) => {
     const galeriePath = path.join(__dirname, 'galerie.json');
+	const random = Math.floor(Math.random()*10%3)+2;
+	// const random = 3;
+	console.log(random);
     fs.readFile(galeriePath, 'utf-8', (err, data) => {
         if (err) {
             console.error('Eroare la citirea fisierului galerie:', err);
@@ -148,20 +170,140 @@ app.get(['/', '/index', '/home'], (req, res) => {
             let im = galerie.imagini[i];
             im.imagine = galerie.cale_galerie + im.cale_imagine; 
             const data_min_quarter = Math.floor(new Date().getMinutes() / 15) + 1;
+			
+			// modificare in timpul prezentarii 
+
+			// if (data_min_quarter == 1){
+			// 	data_min_quarter = 4;
+			// }
+
             if (data_min_quarter == im.sfert_ora) {
                 galerieCuImagini.push(im);
             }
         }
-        res.render('pagini/index', {ipUser: req.ip, gal:galerieCuImagini });
+		const galRandom = [];
+		let rands = [];
+		// console.log("galerie.imagini.length:");  
+		// console.log(galerie.imagini.length);
+		do{
+			let imRand = Math.floor(Math.random()*100%galerie.imagini.length)+1;
+			// console.log(imRand);
+            if(!rands.includes(imRand) && (imRand < galerie.imagini.length)){
+				rands.push(imRand);
+				if(galerie.imagini[imRand].titlu.length <= 15){
+					galRandom.push(galerie.imagini[imRand]);
+				} 
+			} 
+			// console.log(rands);
+			// console.log(galRandom); 
+		}while(galRandom.length !== (random*random))
+        res.render('pagini/index', {ipUser: req.ip, gal:galerieCuImagini, dinam:galRandom, categorii:categoriEnum });
     });
 });
 
 app.get('/despre', (req, res) => {
-  res.render('pagini/despre');
+  res.render('pagini/despre',{categorii:categoriEnum});
 });
 
+app.get('/galerie', (req, res) => {
+	const galeriePath = path.join(__dirname, 'galerie.json');
+	const random = Math.floor(Math.random()*10%3)+2;
+	// const random = 3;
+	console.log(random);
+    fs.readFile(galeriePath, 'utf-8', (err, data) => {
+        if (err) {
+            console.error('Eroare la citirea fisierului galerie:', err);
+            return;
+        }
+        const galerie = JSON.parse(data); 
+        const galerieCuImagini = [];
+        for (let i = 0; i < galerie.imagini.length; i++) {
+            let im = galerie.imagini[i];
+            im.imagine = galerie.cale_galerie + im.cale_imagine; 
+            const data_min_quarter = Math.floor(new Date().getMinutes() / 15) + 1;
+			
+			// modificare in timpul prezentarii 
+
+			// if (data_min_quarter == 1){
+			// 	data_min_quarter = 4;
+			// }
+
+            if (data_min_quarter == im.sfert_ora) {
+                galerieCuImagini.push(im);
+            }
+        }
+		const galRandom = [];
+		let rands = [];
+		// console.log("galerie.imagini.length:");  
+		// console.log(galerie.imagini.length);
+		do{
+			let imRand = Math.floor(Math.random()*100%galerie.imagini.length)+1;
+			// console.log(imRand);
+            if(!rands.includes(imRand) && (imRand < galerie.imagini.length)){
+				rands.push(imRand);
+				if(galerie.imagini[imRand].titlu.length <= 15){
+					galRandom.push(galerie.imagini[imRand]);
+				} 
+			} 
+			// console.log(rands);
+			// console.log(galRandom); 
+		}while(galRandom.length !== (random*random))
+        res.render('pagini/galerie', {ipUser: req.ip, gal:galerieCuImagini, dinam:galRandom, categorii:categoriEnum });
+    });
+  });
+
+
+  app.get('/produse/:categorie?', async (req, res) => {
+    const categorie = req.params.categorie || 'toate';
+
+    try {
+        let query, params;
+        
+        if (categorie === 'toate') {
+            query = "SELECT * FROM carti";
+            params = [];
+        } else {
+            query = "SELECT * FROM carti WHERE gen_carte = $1";
+            params = [categorie];
+        }
+
+        const { rows: produse } = await client.query(query, params); 
+
+        console.log("Produse:", produse);
+
+        res.render('pagini/produse', { categorii: categoriEnum, produse }); 
+    } catch (err) {
+        console.error("Eroare la interogare:", err);
+        res.status(500).send("Eroare la preluarea produselor");
+    }
+});
+
+
+app.get('/produse/:categorie/:numeProdus', async (req, res) => {
+    const { categorie, numeProdus } = req.params;
+
+    try {
+        const query = "SELECT * FROM carti WHERE nume = $1 AND gen_carte = $2";
+        const params = [numeProdus, categorie];
+
+        const { rows } = await client.query(query, params);
+
+        if (rows.length === 0) {
+            return res.status(404).send("Produsul nu a fost găsit.");
+        }
+
+        const produs = rows[0];
+
+        res.render('pagini/produs', {categorii: categoriEnum, produs }); 
+    } catch (err) {
+        console.error("Eroare la interogare:", err);
+        res.status(500).send("Eroare la preluarea produsului");
+    }
+});
+
+
 app.get('/video-vtt', (req, res) => {
-    res.render('pagini/video-vtt');
+    res.render('pagini/video-vtt', {categorii:categoriEnum});
 });
 
 app.get('/*', (req, res) => {
@@ -175,7 +317,7 @@ app.get('/*', (req, res) => {
           afisareEroare(res, 500);
         }
       } else {
-        res.send(rezultatRadnare);
+        res.send(rezultatRadnare, {categorii:categoriEnum});
       }
     });
 });
