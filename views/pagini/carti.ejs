@@ -1,0 +1,138 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/resurse/css/examen.css" type="text/css" />
+    </head>
+    <p>
+        <p>Numar de filtrari <span id="noFiltrari"></span></p>
+        <p>Numar de sortari <span id="noSortari"></span></p>
+        <p><button id="resetLocal">
+            Resetare
+        </button></p>
+        <select>
+            <option value="asc">Ascendent</option>
+            <option value="desc">Descendent</option>
+        </select>
+        <button id="sorting">
+            Sorteaza
+        </button>
+        <p>
+            <input id="filtru" placeholder="Titlu / Autor">
+            <button id="filtering">
+                Filtreaza
+            </button>
+        </p>
+    <main>
+
+        
+        <% for(let i = 0; i < carti.length; i++) { %>
+            <article id="<%= i %>">
+
+                <h2>
+                    <%= carti[i].titlu %>
+                </h2>
+                <p> <%= carti[i].autor %> <%= carti[i].an_publicare %> </p>
+                <p> <%= carti[i].gen %> </p>
+                <ul>
+                    <% fine[i].forEach( rat => {%>
+                        <li><%= rat %></li>
+
+                    <% }) %>
+                </ul>
+                <p class="medie">Media: <span><%= medieFine[i] %></span></p>
+            </article>
+        <% } %>
+        <% for(let i = 0; i < carti.length; i++) { %>
+            <article id="id_<%= i %>">
+                <h2>
+                    <%= carti[i].titlu %>
+                </h2>
+                <p> <%= carti[i].autor %> <%= carti[i].an_publicare %> </p>
+                <p> <%= carti[i].gen %> </p>
+                <ul>
+                    <% fine[i].forEach( rat => {%>
+                        <li><%= rat %></li>
+
+                    <% }) %>
+                </ul>
+                <p class="medie">Media: <span><%= medieFine[i] %></span></p>
+            </article>
+        <% } %>
+    </main>
+    <script>
+document.getElementById("sorting").addEventListener('click', ev => {
+    localStorage.setItem("sortari", noSortari+1);
+    document.getElementById("noSortari").innerText = noSortari+1;
+
+    const container = document.querySelector("main");
+
+    const entitati = Array.from(document.querySelectorAll("article"));
+    const s = document.querySelector("select");
+    const selectie = s.options[s.selectedIndex].value;
+    console.log(selectie);
+    if(selectie == 'asc'){
+        entitati.sort((a, b) => {    
+            const medieA = parseFloat(a.querySelector(".medie span").innerText);
+            const medieB = parseFloat(b.querySelector(".medie span").innerText);
+
+            if(medieA - medieB === 0){
+                const titluA = a.querySelector("h2").innerText.toLowerCase();
+                const titluB = b.querySelector("h2").innerText.toLowerCase();
+
+                const titluCompare = titluA.localeCompare(titluB);
+                    return titluCompare; 
+            }
+            return medieA - medieB;
+        });
+    } else if(selectie == 'desc'){
+        entitati.sort((a, b) => {    
+            const medieA = parseFloat(a.querySelector(".medie span").innerText);
+            const medieB = parseFloat(b.querySelector(".medie span").innerText);
+            if(medieA - medieB === 0){
+                const titluA = a.querySelector("h2").innerText.toLowerCase();
+                const titluB = b.querySelector("h2").innerText.toLowerCase();
+
+                const titluCompare = titluB.localeCompare(titluA);
+                    return titluCompare; 
+            }
+            return medieB - medieA;
+        });
+    }
+
+    const newContainer = document.createElement("main");
+
+    entitati.forEach(entitate => newContainer.appendChild(entitate));
+
+    container.parentNode.replaceChild(newContainer, container);
+})
+
+document.getElementById("filtering").addEventListener('click',ev=>{
+    localStorage.setItem("filtrari", noFiltrari+1);
+    document.getElementById("noFiltrari").innerText = noFiltrari+1;
+    
+    const string = document.getElementById("filtru").value.toLowerCase();
+    const entitati = document.querySelectorAll("article");
+    // console.log(string);
+    // console.log(entitati);
+    entitati.forEach(carte =>{
+        const titlu = carte.querySelector('h2').innerText.toLowerCase();
+        if(!titlu.includes(string)){
+            carte.classList.add('hidden');
+        }
+    })
+})
+const noFiltrari = parseInt(localStorage.getItem("filtrari"));
+const noSortari = parseInt(localStorage.getItem("sortari"));
+document.getElementById("noFiltrari").innerText = noFiltrari;
+document.getElementById("noSortari").innerText = noSortari;
+// console.log(noFiltrari);
+// console.log(noSortari);
+
+document.getElementById("resetLocal").addEventListener('click', ev =>{
+    localStorage.setItem("filtrari", 0);
+    localStorage.setItem("sortari", 0);
+    document.getElementById("noFiltrari").innerText = 0;
+    document.getElementById("noSortari").innerText = 0;
+})
+    </script>
+    </body>
+</html>

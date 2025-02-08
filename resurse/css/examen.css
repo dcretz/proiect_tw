@@ -1,0 +1,46 @@
+main{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    counter-reset: cell;
+}
+
+main article::before{
+    counter-increment: cell;
+    content: counter(cell);
+    position: absolute;
+}
+
+main article:nth-child(9n+1),
+main article:nth-child(9n+4),
+main article:nth-child(9n+7){
+    background-color: antiquewhite;
+}
+main article:nth-child(9n+2),
+main article:nth-child(9n+6),
+main article:nth-child(9n+8){
+    background-color: aquamarine;
+}
+main article:nth-child(9n+3),
+main article:nth-child(9n+5),
+main article:nth-child(9n+9){
+    background-color: chocolate;
+}
+
+@media (max-width: 768px) {
+    main{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, auto);
+    }
+}
+.medie{
+    transition: all 2s;
+}
+article:hover  .medie{
+    background-color: red;
+    margin-top: -5px;
+}
+.hidden{
+    display: none;
+}

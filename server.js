@@ -12,7 +12,7 @@ const vect_foldere = ["temp", "backup"]; // Adăugăm folderul backup
 const Client=pg.Client;
 
 const client = new Client({
-    database:"proiect",
+    database:"examen",
     user:"admindio",
     password:"admin",
     host:"localhost",
@@ -20,10 +20,10 @@ const client = new Client({
 });
 var categoriEnum = [];
 client.connect();
-client.query("SELECT unnest(enum_range(NULL::genuri_carte)) AS categorie;", function(err,rezultat){
-	categoriEnum = rezultat.rows.map( row => row.categorie );
-	console.log(categoriEnum); 
-});
+// client.query("SELECT unnest(enum_range(NULL::genuri_carte)) AS categorie;", function(err,rezultat){
+// 	categoriEnum = rezultat.rows.map( row => row.categorie );
+// 	console.log(categoriEnum); 
+// });
 
 vect_foldere.forEach((folder) => {
     const folderPath = path.join(__dirname, folder);
@@ -302,9 +302,71 @@ app.get('/produse/:categorie/:numeProdus', async (req, res) => {
 });
 
 
-app.get('/video-vtt', (req, res) => {
+app.get('/video-vtt',  (req, res) => {
     res.render('pagini/video-vtt', {categorii:categoriEnum});
 });
+
+app.get('/carti?id=:ids', async  (req, res) => {
+    let fine = [];
+    let medieFine = [];
+    const s = req.params;
+    // const idsList = idsReq.split('_');
+    console.log(idsReq);
+    try {
+        await client.query("SELECT * FROM carti")
+        .then( (val) => {
+            // console.log("val");   
+            // console.log(val.rows);   
+            val.rows.forEach(rand => {
+                let medie = 0;
+                const rates = rand.rating.split(',');
+                fine.push(rates);
+                rates.forEach(rate => {
+                    medie = medie + parseInt(rate);
+                })
+                medie = medie / rates.length;
+                medieFine.push(medie);
+            })
+            
+            
+            res.render('pagini/carti', {carti: val.rows, fine, medieFine})
+        })
+        // console.log(rows);
+    } catch (err) {
+        console.error("Eroare la interogare:", err);
+            res.status(500).send("Eroare la preluarea produsului");
+    }
+})
+
+
+app.get('/carti', async  (req, res) => {
+    let fine = [];
+    let medieFine = [];
+    try {
+        await client.query("SELECT * FROM carti")
+        .then( (val) => {
+            // console.log("val");   
+            // console.log(val.rows);   
+            val.rows.forEach(rand => {
+                let medie = 0;
+                const rates = rand.rating.split(',');
+                fine.push(rates);
+                rates.forEach(rate => {
+                    medie = medie + parseInt(rate);
+                })
+                medie = medie / rates.length;
+                medieFine.push(medie);
+            })
+            
+            
+            res.render('pagini/carti', {carti: val.rows, fine, medieFine})
+        })
+        // console.log(rows);
+    } catch (err) {
+        console.error("Eroare la interogare:", err);
+            res.status(500).send("Eroare la preluarea produsului");
+    }
+})
 
 app.get('/*', (req, res) => {
     const requestedPage = req.params[0]; 
